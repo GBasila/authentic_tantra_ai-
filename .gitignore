@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Private & sensitive
+**/participants.md
+**/participants_*.md
+**/*.private.md
+/retreats/editions/**/participants*
+/.env
+/.env.*
+
+# Generated
+/build/
+/dist/
+node_modules/
+
+# Local drafts
+/drafts/
+**/*.draft.md
+
+# Keys
+*.key
+*.pem

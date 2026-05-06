@@ -1,0 +1,12 @@
+# Sacred paths — Victoria's approval required
+/brand/                  @victoria
+/strategy/               @victoria @ops-manager
+/agents/_shared_context.md @victoria
+/retreats/retreat_structure.md @victoria
+
+# Domain ownership
+/content/                @content-manager @victoria
+/sales/                  @sales-lead @victoria
+/audience/               @audience-agent @ops-manager
+/templates/              @ops-manager
+/workflows/              @ops-manager
