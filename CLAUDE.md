@@ -403,7 +403,26 @@ claude
 > *Update this section when ending a significant work session.*
 > *Format: date · what was done · what is in flight · what to do next.*
 
-### 2026-05-15 — Lead Magnet + 20-post IG month plan written
+### 2026-05-15 (afternoon) — Telegram launch posts + 1:1 landing page
+
+**Done this round:**
+- ✅ Telegram channel content in `/content/telegram/`:
+  - `README.md` — channel strategy, voice, cadence (3-4 posts/wk), formats
+  - `launch-first-10-posts.md` — 10 launch posts (manifesto, founder reflection, poetic strings, story, Kaula fragment, DM Q&A, voice memo script, couples post, lead magnet invite)
+- ✅ Premium 1:1 landing page at `/website/sessiya/`:
+  - `index.html` — full premium page (hero, recognition, container, for-whom, investment, application form with 6 fields, 7-question FAQ, final invitation, footer)
+  - `page.css` — page-specific styles (sticky topbar, dark-mode form, FAQ accordion, investment grid)
+  - `page.js` — application form with Formspree action + mailto fallback (same pattern as lead magnet)
+- ✅ Updated `/website/index.html` — hero CTA and offer CTA now both link to `sessiya/`
+
+**1:1 page architecture (premium application-based, not checkout):**
+- Path: `authentictantra.com/sessiya/`
+- Application fields: name, email, format (online/offline/any), what brings you, what you hope to meet, scholarship (no/yes/discuss)
+- No Stripe checkout — Victoria reads each application personally, responds 2-3 days
+- Mailto fallback: composes a structured email until Formspree is connected
+- Pricing: €400, scholarship tier mentioned
+
+### 2026-05-15 (morning) — Lead Magnet + 20-post IG month plan written
 **Done in this session:**
 - ✅ Website v1.0 shipped, deployed to Vercel (user confirmed live — URL pending capture)
 - ✅ Created Lead Magnet «Пять дней возвращения в тело» (4 files in `/content/lead-magnet/`):
