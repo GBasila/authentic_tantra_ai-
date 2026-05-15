@@ -403,25 +403,50 @@ claude
 > *Update this section when ending a significant work session.*
 > *Format: date · what was done · what is in flight · what to do next.*
 
-### 2026-05-13 — Website v1.0 shipped + Vercel deployment in progress
+### 2026-05-15 — Lead Magnet + 20-post IG month plan written
 **Done in this session:**
-- Built full website v1.0 (HTML/CSS/JS, single-page)
-- Encoded hero video from `AuthenticTantra.MP4` (44s, 1080p, 13MB)
-- Compressed 5 photos to ~400-570KB each
-- Pushed two commits to GitHub: `feat(website): seed v1.0` and `content(website): add 5 photos`
-- Created this CLAUDE.md file
-- Started Vercel CLI device auth flow
+- ✅ Website v1.0 shipped, deployed to Vercel (user confirmed live — URL pending capture)
+- ✅ Created Lead Magnet «Пять дней возвращения в тело» (4 files in `/content/lead-magnet/`):
+  - `README.md` — overview, KPI, prerequisites
+  - `landing-copy.md` — 3 versions of signup copy (site + landing + short)
+  - `emails.md` — full text of 6 emails (welcome + 5 days), ready for Kit/ConvertKit
+  - `audio-scripts.md` — 5 audio practice scripts for Victoria to record (5-8 min each)
+- ✅ Created Instagram month plan in `/content/instagram/2026-05/`:
+  - `README.md` — month overview, cadence, narrative arc
+  - `week-01-founder-story.md` — 5 posts on 5 acts of Victoria's journey
+  - `week-02-demystification.md` — 5 posts on what tantra really is
+  - `week-03-body-memory.md` — 5 posts on embodiment with first practice
+  - `week-04-invitation.md` — 5 posts launching the Lead Magnet
+- ✅ Total: 20 ready-to-publish IG posts (Reel scripts + Carousel slides + captions + hashtags)
 
-**In flight:**
-- Vercel account registration (user struggling with "no vercel account for this email" — switched to direct vercel.com/signup web flow)
-- Deployment of /website/ to production
+**Architecture: how Lead Magnet and IG plan work together**
+- IG Week 4 (June 8-14) opens doors to Lead Magnet
+- Lead Magnet emails start landing June 9+ for new subscribers
+- Day 5 of Lead Magnet (~June 13) → soft invitation to 1:1 sessions (€400)
+- Revenue funnel: IG → Email → 1:1 → (later) Mini-course → (Month 3) Flagship
 
-**Next when Victoria returns:**
-1. Confirm Vercel account created
-2. Walk through "Add New Project → Import → Root Directory: website → Deploy"
-3. Once live, share URL and check on mobile + desktop
-4. Plant the seeds for connecting domain (`authentictantra.com`)
-5. Then move to Month 1 plan: Telegram channel + first content batch
+**In flight (user-side work needed):**
+1. Capture Vercel URL → update site reference in this file
+2. Buy domain `authentictantra.com` (€12/yr via Namecheap or similar)
+3. Connect domain to Vercel
+4. Register on **Kit.com** (formerly ConvertKit) — free up to 10k subscribers
+5. Build automation in Kit using emails from `/content/lead-magnet/emails.md`
+6. Record 5 audio practices per `/content/lead-magnet/audio-scripts.md` (1-2 morning sessions)
+7. Upload audio to Vercel Blob or Cloudinary, replace `AUDIO_URL_DAY_N` placeholders
+8. Replace Formspree placeholder in `website/index.html` with real form ID
+9. Plan IG production: Sunday capture sessions per `/content/instagram/2026-05/README.md`
+
+**Next strategic move when Victoria returns:**
+- Either: walk her through Kit.com setup (technical task — needs her account)
+- Or: design Telegram channel seed posts (10 foundational posts)
+- Or: design Day 0 audio recording session — what gear she needs, how to set up mic, room, light
+- Or: plan a content "Sunday capture session" — script the actual Reels for Week 1
+
+**User constraints to honor:**
+- No team hires — Claude does all operational work
+- Variant 1 visual direction confirmed (Aesop/Heckfield premium, no neo-tantra clichés)
+- Sales philosophy: invitation, never pressure
+- Victoria's 5am practice is sacred — protect her time
 
 ---
 
