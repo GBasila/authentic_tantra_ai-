@@ -403,6 +403,30 @@ claude
 > *Update this section when ending a significant work session.*
 > *Format: date · what was done · what is in flight · what to do next.*
 
+### 2026-05-15 (evening) — Reels shooting scripts (second-by-second)
+
+**Done this round:**
+- ✅ `/content/instagram/2026-05/reels-shooting/` folder with 14 files:
+  - `README.md` — universal shooting principles: equipment, iPhone settings,
+    light/wardrobe/voice rules, pause taxonomy, editing principles
+  - 13 individual Reel scripts (one file per Reel), each with:
+    - Pre-production checklist (location, time, light, wardrobe, equipment, takes)
+    - Shot list (1-6 shots per Reel)
+    - **Second-by-second script** with breath cues, eye direction, pause
+      durations (micro / short / breath / deep — 0.5s / 1s / 2s / 3s)
+    - Audio notes (music yes/no, volume in dB)
+    - Editing notes (cuts, captions, color grade, end frame)
+    - "Не делать" list + "Если получилось" diagnostic
+    - Signature phrases worth saving
+- All scripts respect brand voice rules from `/brand/tone_of_voice.md`
+- Scripts written to be openable on phone during shooting
+
+**Reel inventory (13):**
+- W1: Act 1 Success, Act 3 Search (vignette voiceover), Act 5 Service
+- W2: Not what you think, Not about sex, If you were told about chakras
+- W3: You are not tired, 3-min practice (guided), Belly breath story
+- W4: Doors opening, Day 1 teaser, What it means to return, Doors closing
+
 ### 2026-05-15 (afternoon) — Telegram launch posts + 1:1 landing page
 
 **Done this round:**
