@@ -403,6 +403,40 @@ claude
 > *Update this section when ending a significant work session.*
 > *Format: date · what was done · what is in flight · what to do next.*
 
+### 2026-05-16 — Website v1.1 (RU edits + English version + language switcher)
+
+**Done this round:**
+- ✅ De-gendered the Invitation section (was feminine-only, now neutral):
+  - «вы устали быть сильной» → «вы давно устали — но не давали себе это признать»
+  - «вы забыли, какая вы» → «вы забыли, кто вы на самом деле»
+  - «я шла этой дорогой» → «я знаю эту дорогу» (Victoria keeps feminine self-reference)
+- ✅ Deepened Founder Story with:
+  - Subtle mention "Жена долларового миллионера"
+  - The «Это всё?» question pulled out as `.prose__pull` (large italic Terra Shakti)
+- ✅ Fixed photo gallery cropping:
+  - Was 2-column with object-fit: cover (heavy crop on tall portraits)
+  - Now 3-column equal grid, aspect-ratio 3/4, object-fit: contain
+  - All photos shown fully with subtle cream-2 letterbox
+  - Mobile: single column 4/5 aspect
+- ✅ Added "путь сознательной эволюции" to the «Это —» list (between Каула tradition and мягкое пространство)
+- ✅ Global language switcher (RU · EN) — fixed top-right, backdrop blur pill:
+  - Works on all 4 pages
+  - Active language is cream/light, inactive is muted
+- ✅ Full English translation at /website/en/:
+  - `en/index.html` — home page
+  - `en/sessiya/index.html` — 1:1 application page
+  - Reuses parent CSS/JS via relative paths
+  - Title: "Authentic Tantra · A return to yourself"
+  - Tagline: "There is nothing to learn here — only what needs to be remembered"
+
+**Locally verified:** all 4 pages return 200, all new text strings present,
+old gendered strings removed.
+
+**Pending:**
+- Vercel will auto-redeploy on push
+- User needs to verify on production URL after deploy
+- Formspree IDs still placeholders on both lead magnet and sessiya forms
+
 ### 2026-05-15 (evening) — Reels shooting scripts (second-by-second)
 
 **Done this round:**
