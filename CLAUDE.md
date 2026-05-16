@@ -403,6 +403,40 @@ claude
 > *Update this section when ending a significant work session.*
 > *Format: date · what was done · what is in flight · what to do next.*
 
+### 2026-05-16 (later) — Founder Story v1.2 (meaning pass)
+
+**Done this round:**
+- ✅ Reworked Founder Story section on both RU `/website/index.html` and
+  EN `/website/en/index.html`. Brand-voice audit identified six places to tighten;
+  user chose Variant A (cleaner rhythm) + closing from Variant C (invitation to reader).
+- ✅ Eyebrow «Кто я» → «Мой путь» / "Who I am" → "My path"
+  (less CV-style, more poetic — matches other section eyebrows).
+- ✅ Replaced direct «Жена долларового миллионера» mention with brand-central
+  body-language: «Тело, в которое не хотелось возвращаться» / "A body I did not want to return to".
+  This seeds the brand's core theme (return to body) in the very first stanza,
+  removes any unintended speculation about Victoria's marriage, and gives her
+  subjectivity (defined by her own life, not by her husband).
+- ✅ Act 3 (Search) reformatted: was one long list-sentence
+  («ретриты, тёмные ретриты, диеты, паломничества»), now four short staccato lines.
+  Honors voice rule #4: "Short sentences. Long breaths between them."
+- ✅ Act 3 verb shift: «Я искала ответ» (concept) → «Я пробовала всё, что обещало ответ» (body).
+- ✅ Act 4 (Finding) tightened with «Практика с пяти утра. Каждый день. Уже годы.»
+  — adds quiet proof-of-discipline that strengthens the «проводник» claim later.
+- ✅ Added invitation as final paragraph (`.prose__close` italic):
+  «Если в вас сейчас звучит то, что когда-то звучало во мне — вы не одни.
+  Дверь приоткрыта.» / "If what once stirred in me is stirring in you now —
+  you are not alone. The door is ajar."
+  This turns the page from biography into a bridge to the 1:1 offer.
+- ✅ EN translation uses "ajar" (not "open") — more poetic, closer to
+  «приоткрыта» than "open".
+
+**Verified locally:** all 4 pages (RU/EN × home/sessiya) return 200,
+all new strings present, all old strings removed.
+
+**Pending:** Vercel auto-redeploy on push.
+
+---
+
 ### 2026-05-16 — Website v1.1 (RU edits + English version + language switcher)
 
 **Done this round:**
