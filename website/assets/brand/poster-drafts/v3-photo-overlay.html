@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body {
+    background: #2B2A28;
+    font-family: "Inter", sans-serif;
+    color: #F2EADF;
+    position: relative;
+  }
+  .poster {
+    width: 1080px;
+    height: 1350px;
+    position: relative;
+  }
+  .poster__bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("../../photos/victoria-portrait-eyes-closed.jpg");
+    background-size: cover;
+    background-position: center 25%;
+    background-color: #2B2A28;
+    filter: brightness(0.78) contrast(1.02) saturate(0.95);
+  }
+  .poster__veil {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(43,42,40,0.45) 0%, rgba(43,42,40,0.15) 35%, rgba(43,42,40,0.25) 65%, rgba(43,42,40,0.78) 100%);
+  }
+  .poster__content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 88px 80px 80px;
+    z-index: 2;
+  }
+  .top { text-align: center; }
+  .eyebrow {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #D9C9A8;
+    padding-left: 0.5em;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 120px;
+    line-height: 0.98;
+    letter-spacing: -0.005em;
+    color: #F2EADF;
+    text-align: left;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.18);
+  }
+  .meta {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .meta__when {
+    border-top: 1px solid rgba(242,234,223,0.3);
+    padding-top: 16px;
+    flex: 1;
+    max-width: 460px;
+  }
+  .meta__when .day {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #F2EADF;
+    display: block;
+    line-height: 1.2;
+  }
+  .meta__when .time {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #D9C9A8;
+    margin-top: 12px;
+    display: block;
+    padding-left: 0.28em;
+  }
+  .meta__qr {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 8px;
+  }
+  .meta__qr .qr-wrap {
+    background: #F2EADF;
+    padding: 10px;
+  }
+  .meta__qr img {
+    display: block;
+    width: 100px; height: 100px;
+  }
+  .meta__qr .label {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #D9C9A8;
+    padding-left: 0.28em;
+  }
+</style>
+</head><body>
+  <div class="poster">
+    <div class="poster__bg"></div>
+    <div class="poster__veil"></div>
+    <div class="poster__content">
+      <div class="top">
+        <p class="eyebrow">Authentic Tantra</p>
+      </div>
+
+      <div class="bottom">
+        <h1 class="title">
+          Body.<br />
+          Breath.<br />
+          Heart.
+        </h1>
+
+        <div class="meta">
+          <div class="meta__when">
+            <span class="day">Every Wednesday</span>
+            <span class="time">18:30 · Details in Telegram</span>
+          </div>
+          <div class="meta__qr">
+            <div class="qr-wrap"><img src="qr-telegram.png" alt="QR" /></div>
+            <span class="label">@authentic_tantra</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body></html>
