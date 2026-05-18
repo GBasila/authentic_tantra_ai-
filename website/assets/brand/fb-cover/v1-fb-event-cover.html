@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; }
+  body {
+    background: #2B2A28;
+    font-family: "Inter", sans-serif;
+    color: #F2EADF;
+    position: relative;
+  }
+  .cover { width: 1920px; height: 1080px; position: relative; }
+
+  /* Photo as full-bleed background, face positioned to right side */
+  .cover__bg {
+    position: absolute; inset: 0;
+    background-image: url("../../photos/victoria-portrait-eyes-closed.jpg");
+    background-size: cover;
+    background-position: 78% 30%;
+    background-color: #2B2A28;
+    filter: contrast(1.04) saturate(0.95) brightness(0.88);
+  }
+
+  /* Gradient veil — heavier on left for text readability, light on right where face is */
+  .cover__veil {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg,
+        rgba(43,42,40,0.82) 0%,
+        rgba(43,42,40,0.65) 25%,
+        rgba(43,42,40,0.30) 55%,
+        rgba(43,42,40,0.05) 80%,
+        rgba(43,42,40,0.15) 100%
+      ),
+      linear-gradient(180deg,
+        rgba(43,42,40,0.25) 0%,
+        transparent 18%,
+        transparent 82%,
+        rgba(43,42,40,0.35) 100%
+      );
+  }
+
+  /* Content layout — left-aligned text block */
+  .cover__content {
+    position: absolute; inset: 0;
+    padding: 90px 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  /* Wordmark — TOP CENTER, larger (44px vs avatar's 20px) */
+  .wordmark {
+    font-family: "Inter", sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: rgba(242, 234, 223, 0.95);
+    padding-left: 0.5em;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.45);
+    text-align: center;
+  }
+
+  /* Center area — title */
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: 880px;
+  }
+
+  .title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 184px;
+    line-height: 0.96;
+    letter-spacing: -0.005em;
+    color: #F2EADF;
+    text-shadow: 0 3px 30px rgba(0,0,0,0.55);
+  }
+
+  /* Bottom meta — small left-aligned */
+  .meta {
+    border-top: 1px solid rgba(242,234,223,0.35);
+    padding-top: 22px;
+    max-width: 640px;
+  }
+  .meta__day {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 38px;
+    color: #F2EADF;
+    line-height: 1.2;
+    display: block;
+  }
+  .meta__time {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(217, 201, 168, 0.95);
+    padding-left: 0.32em;
+    margin-top: 14px;
+    display: block;
+  }
+</style>
+</head><body>
+  <div class="cover">
+    <div class="cover__bg"></div>
+    <div class="cover__veil"></div>
+    <div class="cover__content">
+      <p class="wordmark">Authentic Tantra</p>
+
+      <div class="center">
+        <h1 class="title">Body.<br/>Breath.<br/>Heart.</h1>
+      </div>
+
+      <div class="meta">
+        <span class="meta__day">Weekly gathering</span>
+        <span class="meta__time">Every Monday · 18:30 · Details in Telegram</span>
+      </div>
+    </div>
+  </div>
+</body></html>
