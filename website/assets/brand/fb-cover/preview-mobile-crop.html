@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1600px; height: 1900px; overflow: hidden; font-family: "Inter", sans-serif; background: #F2EADF; }
+  body { padding: 50px 60px; color: #2B2A28; }
+  h1 {
+    font-size: 22px; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #A68A5B; margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 13px; color: #4A4642;
+    margin-bottom: 36px; letter-spacing: 0.04em;
+  }
+  .section-label {
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #2B2A28;
+    margin-bottom: 14px;
+  }
+  .section-sub {
+    font-size: 11px; color: #A68A5B;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  /* Desktop preview — full 1920×1080 scaled down */
+  .desktop {
+    margin-bottom: 50px;
+  }
+  .desktop__img {
+    width: 100%;
+    aspect-ratio: 1920 / 1080;
+    background-image: url("v1-fb-event-cover.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 32px rgba(43,42,40,0.15);
+    position: relative;
+  }
+  /* Safe zone overlay on desktop preview */
+  .desktop__safe {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 22.92%; /* 420/1920 */
+    width: 56.25%; /* 1080/1920 */
+    border: 2px dashed rgba(122, 46, 46, 0.7);
+    pointer-events: none;
+  }
+  .desktop__safe-label {
+    position: absolute;
+    top: 8px; right: 8px;
+    background: rgba(122, 46, 46, 0.95);
+    color: #F2EADF;
+    padding: 4px 10px;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+  /* Mobile crop simulations */
+  .mobile-event {
+    aspect-ratio: 1 / 1;
+    background-image: url("v1-fb-event-cover.png");
+    background-size: auto 100%; /* full height visible, sides cropped to square */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #2B2A28;
+    box-shadow: 0 8px 32px rgba(43,42,40,0.15);
+  }
+
+  .mobile-feed {
+    aspect-ratio: 1.91 / 1;
+    background-image: url("v1-fb-event-cover.png");
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0 8px 32px rgba(43,42,40,0.15);
+  }
+</style>
+</head><body>
+
+  <h1>Facebook Event Cover — Display Preview</h1>
+  <p class="subtitle">Как обложка будет выглядеть на разных устройствах. Красная пунктирная рамка на десктопе показывает мобильный safe-zone (центральный квадрат 1080×1080).</p>
+
+  <div class="desktop">
+    <p class="section-label">1 · Desktop preview · 1920×1080</p>
+    <p class="section-sub">так выглядит на компьютере (полный кадр)</p>
+    <div class="desktop__img">
+      <div class="desktop__safe">
+        <span class="desktop__safe-label">Mobile safe zone</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div>
+      <p class="section-label">2 · Mobile event page · 1:1</p>
+      <p class="section-sub">когда открыто само мероприятие</p>
+      <div class="mobile-event"></div>
+    </div>
+    <div>
+      <p class="section-label">3 · Mobile feed / link preview · 1.91:1</p>
+      <p class="section-sub">как карточка в ленте</p>
+      <div class="mobile-feed"></div>
+    </div>
+  </div>
+
+</body></html>

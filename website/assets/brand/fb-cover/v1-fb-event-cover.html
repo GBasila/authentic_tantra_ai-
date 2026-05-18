@@ -13,101 +13,100 @@
   }
   .cover { width: 1920px; height: 1080px; position: relative; }
 
-  /* Photo as full-bleed background, face positioned to right side */
+  /* Photo as full-bleed background.
+     Face shifted leftward to fit inside mobile crop (x=420..1500). */
   .cover__bg {
     position: absolute; inset: 0;
     background-image: url("../../photos/victoria-portrait-eyes-closed.jpg");
     background-size: cover;
-    background-position: 78% 30%;
+    background-position: 64% 30%;
     background-color: #2B2A28;
-    filter: contrast(1.04) saturate(0.95) brightness(0.88);
+    filter: contrast(1.04) saturate(0.95) brightness(0.86);
   }
 
-  /* Gradient veil — heavier on left for text readability, light on right where face is */
+  /* Gradient veil — radial darkening near text area, lighter where face is */
   .cover__veil {
     position: absolute; inset: 0;
     background:
-      linear-gradient(90deg,
+      radial-gradient(ellipse 55% 95% at 36% 50%,
         rgba(43,42,40,0.82) 0%,
-        rgba(43,42,40,0.65) 25%,
-        rgba(43,42,40,0.30) 55%,
-        rgba(43,42,40,0.05) 80%,
-        rgba(43,42,40,0.15) 100%
+        rgba(43,42,40,0.55) 50%,
+        rgba(43,42,40,0.15) 80%,
+        transparent 100%
       ),
       linear-gradient(180deg,
-        rgba(43,42,40,0.25) 0%,
+        rgba(43,42,40,0.22) 0%,
         transparent 18%,
         transparent 82%,
-        rgba(43,42,40,0.35) 100%
+        rgba(43,42,40,0.30) 100%
       );
   }
 
-  /* Content layout — left-aligned text block */
+  /* Mobile-safe square area is x=420..1500 (central 1080×1080 of canvas).
+     Text block is left-of-center inside this safe zone. */
   .cover__content {
-    position: absolute; inset: 0;
-    padding: 90px 130px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 2;
-  }
-
-  /* Wordmark — TOP CENTER, larger (44px vs avatar's 20px) */
-  .wordmark {
-    font-family: "Inter", sans-serif;
-    font-size: 44px;
-    font-weight: 400;
-    letter-spacing: 0.5em;
-    text-transform: uppercase;
-    color: rgba(242, 234, 223, 0.95);
-    padding-left: 0.5em;
-    text-shadow: 0 2px 14px rgba(0,0,0,0.45);
-    text-align: center;
-  }
-
-  /* Center area — title */
-  .center {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 440px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
-    max-width: 880px;
+    align-items: flex-start;
+    padding: 0;
+    z-index: 2;
+  }
+
+  /* Wordmark — directly ABOVE the title (not at top of canvas) */
+  .wordmark {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: rgba(242, 234, 223, 0.92);
+    padding-left: 0.5em;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.5);
+    margin-bottom: 42px;
+    align-self: flex-start;
   }
 
   .title {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
     font-weight: 300;
-    font-size: 184px;
+    font-size: 168px;
     line-height: 0.96;
     letter-spacing: -0.005em;
     color: #F2EADF;
-    text-shadow: 0 3px 30px rgba(0,0,0,0.55);
+    text-shadow: 0 3px 30px rgba(0,0,0,0.6);
   }
 
-  /* Bottom meta — small left-aligned */
+  /* Bottom meta — sits below title, same left alignment */
   .meta {
-    border-top: 1px solid rgba(242,234,223,0.35);
+    border-top: 1px solid rgba(242,234,223,0.38);
     padding-top: 22px;
-    max-width: 640px;
+    margin-top: 56px;
+    width: 100%;
+    max-width: 620px;
   }
   .meta__day {
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
-    font-size: 38px;
+    font-size: 34px;
     color: #F2EADF;
     line-height: 1.2;
     display: block;
   }
   .meta__time {
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    letter-spacing: 0.32em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
     color: rgba(217, 201, 168, 0.95);
-    padding-left: 0.32em;
-    margin-top: 14px;
+    padding-left: 0.3em;
+    margin-top: 12px;
     display: block;
   }
 </style>
@@ -117,11 +116,7 @@
     <div class="cover__veil"></div>
     <div class="cover__content">
       <p class="wordmark">Authentic Tantra</p>
-
-      <div class="center">
-        <h1 class="title">Body.<br/>Breath.<br/>Heart.</h1>
-      </div>
-
+      <h1 class="title">Body.<br/>Breath.<br/>Heart.</h1>
       <div class="meta">
         <span class="meta__day">Weekly gathering</span>
         <span class="meta__time">Every Monday · 18:30 · Details in Telegram</span>
