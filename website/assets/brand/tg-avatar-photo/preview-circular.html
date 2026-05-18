@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1400px; height: 1000px; overflow: hidden; font-family: "Inter", sans-serif; background: #F2EADF; }
+  body { padding: 60px; color: #2B2A28; }
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #A68A5B; margin-bottom: 12px;
+  }
+  .subtitle {
+    font-size: 14px; color: #4A4642;
+    margin-bottom: 50px; letter-spacing: 0.05em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 160px 1fr 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+  .grid > .row-label {
+    font-size: 13px; font-weight: 400;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #A68A5B;
+    text-align: right;
+    padding-right: 16px;
+  }
+  .grid > .col-header {
+    text-align: center;
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #2B2A28;
+  }
+  .avatar-circle {
+    border-radius: 50%;
+    overflow: hidden;
+    background: #2B2A28;
+    box-shadow: 0 8px 32px rgba(43,42,40,0.12);
+    margin: 0 auto;
+    display: block;
+  }
+  .av-40 { width: 40px; height: 40px; }
+  .av-120 { width: 120px; height: 120px; }
+  .av-280 { width: 280px; height: 280px; }
+  .av-label {
+    text-align: center;
+    font-size: 11px; color: #A68A5B;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    margin-top: 8px;
+  }
+  .avatar-circle img { width: 100%; height: 100%; display: block; }
+</style>
+</head><body>
+
+  <h1>Telegram Avatar — Circle Preview</h1>
+  <p class="subtitle">Так каждый вариант будет отображаться в Telegram при разных размерах. Слева направо: в списке чатов (40px) · заголовок канала (120px) · экран превью (280px).</p>
+
+  <div class="grid">
+    <div></div>
+    <div class="col-header">40 px<br><span style="color:#A68A5B;font-size:10px;letter-spacing:0.1em">chat list</span></div>
+    <div class="col-header">120 px<br><span style="color:#A68A5B;font-size:10px;letter-spacing:0.1em">channel header</span></div>
+    <div class="col-header">280 px<br><span style="color:#A68A5B;font-size:10px;letter-spacing:0.1em">expanded view</span></div>
+
+    <div class="row-label">V1<br/>photo<br/>only</div>
+    <div><div class="avatar-circle av-40"><img src="v1-photo-only.png" alt="V1" /></div></div>
+    <div><div class="avatar-circle av-120"><img src="v1-photo-only.png" alt="V1" /></div></div>
+    <div><div class="avatar-circle av-280"><img src="v1-photo-only.png" alt="V1" /></div></div>
+
+    <div class="row-label">V2<br/>photo<br/>+ wordmark</div>
+    <div><div class="avatar-circle av-40"><img src="v2-photo-wordmark.png" alt="V2" /></div></div>
+    <div><div class="avatar-circle av-120"><img src="v2-photo-wordmark.png" alt="V2" /></div></div>
+    <div><div class="avatar-circle av-280"><img src="v2-photo-wordmark.png" alt="V2" /></div></div>
+
+    <div class="row-label">V3<br/>photo<br/>+ Remember.</div>
+    <div><div class="avatar-circle av-40"><img src="v3-photo-phrase.png" alt="V3" /></div></div>
+    <div><div class="avatar-circle av-120"><img src="v3-photo-phrase.png" alt="V3" /></div></div>
+    <div><div class="avatar-circle av-280"><img src="v3-photo-phrase.png" alt="V3" /></div></div>
+  </div>
+
+</body></html>

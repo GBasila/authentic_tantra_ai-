@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body { background: #2B2A28; position: relative; }
+  .avatar { width: 1024px; height: 1024px; position: relative; overflow: hidden; }
+  .avatar__photo {
+    position: absolute; inset: 0;
+    background-image: url("../../photos/victoria-portrait-eyes-closed.jpg");
+    background-size: cover;
+    background-position: 62% 42%;
+    background-color: #2B2A28;
+    filter: contrast(1.02) saturate(0.96) brightness(0.94);
+  }
+  .avatar__veil {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 50% 50%, transparent 55%, rgba(43,42,40,0.32) 100%),
+      linear-gradient(180deg, rgba(43,42,40,0.40) 0%, transparent 28%);
+  }
+  /* Wordmark — placed inside circle safe area at top.
+     Circle inscribed in 1024 square = 1024 diameter.
+     Safe area = ~86% = top edge of circle at y ≈ 72px from top.
+     Place wordmark at y ≈ 110px so it's inside the safe area. */
+  .avatar__wordmark {
+    position: absolute;
+    top: 110px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: rgba(242, 234, 223, 0.95);
+    padding-left: 0.5em;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+  }
+</style>
+</head><body>
+  <div class="avatar">
+    <div class="avatar__photo"></div>
+    <div class="avatar__veil"></div>
+    <p class="avatar__wordmark">Authentic Tantra</p>
+  </div>
+</body></html>
