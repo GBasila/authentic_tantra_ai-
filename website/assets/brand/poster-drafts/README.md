@@ -1,122 +1,71 @@
-# Poster Drafts — Workshop / Channel Announcement
+# Poster — V3 Photo Overlay · 4 Variants
 
-Три варианта постера для анонса воркшопов и канала. Заменяет старый «эзотерический» постер с янтрой и красно-оранжевой палитрой на брендовую эстетику Aesop/Heckfield.
+V3 (cinematic photo overlay) выбран как основной формат постера. Здесь 4 версии — комбинация языка и дня недели.
 
-**Все три:** 1080×1350 px (соотношение 4:5 — подходит для Instagram feed, постер на стену, обложка Telegram channel).
-
----
-
-## Variant 1 — `v1-photo-dominant.png` (фото сверху)
-
-**Композиция:** фото занимает верхние ~60%, текст и QR на cream фоне внизу.
-
-**Когда выбрать:**
-- Для **Telegram канала** как постер (фото видно крупно, текст читается)
-- Для **печати** на стену (наиболее «постерное» ощущение)
-- Когда фото сильное и должно работать как hero-изображение
-
-**Вибрация:** редакторская, «номер журнала», галерея — самый «премиум-постер»
+**Все 4:** 1080×1350 px · фото на весь холст · cream текст на тёмной вуали · QR на `t.me/authentictantra` · handle `@AuthenticTantra`.
 
 ---
 
-## Variant 2 — `v2-side-by-side.png` (текст слева, фото справа)
+## Файлы
 
-**Композиция:** 50/50 — текст с поясняющим подзаголовком на cream слева, фото справа.
+| Файл | Язык | День | Подзаголовок |
+|---|---|---|---|
+| `v3-en-monday.png` | EN | Понедельник | «Every Monday» + «18:30 · Details in Telegram» |
+| `v3-en-weekly.png` | EN | Без дня | «Weekly gathering» + «18:30 · Details in Telegram» |
+| `v3-ru-monday.png` | RU | Понедельник | «Каждый понедельник» + «18:30 · Подробности в Telegram» |
+| `v3-ru-weekly.png` | RU | Без дня | «Еженедельная встреча» + «18:30 · Подробности в Telegram» |
 
-**Когда выбрать:**
-- Для **Instagram feed** (4:5 формат идеален)
-- Когда хочется добавить **подзаголовок** с пояснением о воркшопе
-- Когда аудитория ещё не знает «Body. Breath. Heart.» и нужно объяснить
-
-**Вибрация:** glossy fashion magazine, Vogue spread
+Title в EN: **Body. Breath. Heart.**
+Title в RU: **Тело. Дыхание. Сердце.**
 
 ---
 
-## Variant 3 — `v3-photo-overlay.png` (фото на весь холст с текстом сверху)
+## Когда какую версию использовать
 
-**Композиция:** фото full-bleed с тёмной вуалью, текст «Body. Breath. Heart.» наложен крупным cream шрифтом.
+**EN-monday** — для **Instagram feed** на международную аудиторию + анонс конкретной недели
+**EN-weekly** — для **главной страницы канала / pinned post** — без привязки к дню
+**RU-monday** — для **Telegram канала** на русскоязычную аудиторию + конкретная неделя
+**RU-weekly** — для **долгоиграющего поста** в канале (pin, без устаревания)
 
-**Когда выбрать:**
-- Для **Instagram Stories** (вертикально, цепляет в потоке)
-- Когда хочется максимальной **эмоциональной связи** с фото
-- Когда главный посыл — атмосфера, не информация
+---
 
-**Вибрация:** cinematic, фильм Софии Копполы, обложка альбома
+## Альтернативные layouts (на будущее)
+
+В этой же папке остались HTML-исходники других вариантов:
+- `v1-photo-dominant.html` — фото сверху, текст внизу (более «редакторский»)
+- `v2-side-by-side.html` — текст слева, фото справа (magazine spread)
+
+Их можно использовать как шаблоны для других объявлений. Если захочешь — пересоберу с новым QR за 1 минуту.
 
 ---
 
 ## Что заменить перед публикацией
 
-### 1. Фото
+### Если хочешь другое фото
+Сохрани новое фото как:
+```
+/Users/vicky/alignment-app/authentic_tantra_ai/website/assets/photos/poster-victoria.jpg
+```
+Скажи Claude — обновлю путь в 4 HTML и перерендерю.
 
-Сейчас все три варианта используют `victoria-portrait-eyes-closed.jpg` как placeholder. Если хочешь другое фото (например то, что прислала с белой рубашкой и обнажённым плечом):
-
-1. Сохрани новое фото как:
-   ```
-   /Users/vicky/alignment-app/authentic_tantra_ai/website/assets/photos/poster-victoria.jpg
-   ```
-   (рекомендуемый размер: 1200×1500 px или больше, JPG)
-
-2. Скажи Claude — заменит путь и перерендерит все три PNG.
-
-### 2. Таглайн
-
-Сейчас на постере: **«Body. Breath. Heart.»**
-
-Альтернативы из того же ряда:
-- «Return. Remember. Belong.» — приглашение
-- «Slow. Embodied. Honest.» — три прилагательных
-- «Тело. Дыхание. Сердце.» — русская версия
-
-### 3. Время воркшопа
-
-Сейчас: «Every Wednesday · 18:30»
-
-Если время другое — скажи, поменяю.
-
-### 4. QR код
-
-Сейчас ведёт на `t.me/authentic_tantra`. Если канал называется иначе — пересоздам.
-
----
-
-## Дизайн принципы (заметки на будущее)
-
-- **Палитра:** Cream Alba `#F2EADF` + Charcoal Silence `#2B2A28` + Terra Shakti `#7A2E2E` + Aged Brass `#A68A5B`
-- **Типографика:** Cormorant Garamond italic для главных фраз + Inter spaced caps для tag-words
-- **Никаких:** мандал, янтр, чакр, лотосов, золотых сетей, шрифтов с засечками типа Times
-- **Photo treatment:** filter contrast 0.96, slight desaturation — кинолук Kodak Portra
+### QR
+Сейчас ведёт на `https://t.me/authentictantra`. Если URL изменится — пересоздам за секунду.
 
 ---
 
 ## Технические спеки
 
-- **Source HTML:** `v{N}-{name}.html` — можно открыть в браузере
-- **Rendered PNG:** `v{N}-{name}.png` — готовый файл для загрузки
-- **QR:** `qr-telegram.png` — 300×300, цвета бренда
-- **Регенерация:**
+- **Source HTML:** редактируется в любом editor
+- **Render command:**
   ```bash
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
     --headless=new --disable-gpu --window-size=1080,1350 \
-    --screenshot=v1-photo-dominant.png \
-    file:///path/to/v1-photo-dominant.html
+    --screenshot=v3-en-monday.png \
+    file:///path/to/v3-en-monday.html
   ```
-
----
-
-## Какой выбрать?
-
-Моя рекомендация для **Telegram канала**: **V1 — photo-dominant**.
-- Photo читается крупно в превью канала
-- Текст не теряется в превью
-- Самое «постерное» ощущение
-
-Для **Instagram feed**: **V2 — side-by-side**.
-- 4:5 идеально для feed
-- Подзаголовок объясняет суть для холодной аудитории
-
-Для **Instagram Stories**: **V3 — photo overlay**.
-- Cinematic ощущение
-- Захватывает внимание в Stories-потоке
-
-Можешь использовать **все три** для разных площадок.
+- **QR generation:**
+  ```python
+  python3 -c "import qrcode; qr = qrcode.QRCode(box_size=10, border=2);
+  qr.add_data('https://t.me/authentictantra');
+  qr.make_image(fill_color='#2B2A28', back_color='#F2EADF').save('qr-telegram.png')"
+  ```
