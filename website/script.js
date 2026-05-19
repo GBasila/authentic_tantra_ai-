@@ -84,7 +84,7 @@
         e.preventDefault();
         const subj = encodeURIComponent("Пять дней возвращения в тело");
         const body = encodeURIComponent(`Я хочу начать. Мой email: ${email}`);
-        window.location.href = `mailto:hello@authentictantra.com?subject=${subj}&body=${body}`;
+        window.location.href = `mailto:9261501111v@gmail.com?subject=${subj}&body=${body}`;
         return;
       }
 
@@ -112,7 +112,7 @@
         }
       } catch (err) {
         if (btn) { btn.textContent = originalBtn; btn.disabled = false; }
-        alert("Что-то не получилось. Напишите мне на hello@authentictantra.com");
+        alert("Что-то не получилось. Напишите мне на 9261501111v@gmail.com");
       }
     });
   };

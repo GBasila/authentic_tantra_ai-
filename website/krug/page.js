@@ -44,7 +44,7 @@
         `Что приводит в Круг:\n${bringing}\n\n` +
         `Что хочется почувствовать к 28-му дню:\n${hoping}`
       );
-      window.location.href = `mailto:hello@authentictantra.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:9261501111v@gmail.com?subject=${subject}&body=${body}`;
       return;
     }
 
@@ -74,7 +74,7 @@
       }
     } catch (err) {
       if (btn) { btn.textContent = orig; btn.disabled = false; }
-      alert("Что-то не получилось. Напишите мне на hello@authentictantra.com");
+      alert("Что-то не получилось. Напишите мне на 9261501111v@gmail.com");
     }
   });
 
