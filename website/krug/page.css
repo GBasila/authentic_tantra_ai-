@@ -1,0 +1,404 @@
+/* ═════════════════════════════════════════════════════════════════
+   /krug/ — Page-specific styles
+   Mirrors /sessiya/page.css — same visual language across pages.
+   Inherits all tokens, primitives, footer, and reveal from ../styles.css
+   ═════════════════════════════════════════════════════════════════ */
+
+.page-sessiya { background: var(--c-cream); }
+
+/* ─── Top bar ─── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1.25rem 1.5rem;
+  background: rgba(242, 234, 223, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(43, 42, 40, 0.06);
+}
+.topbar__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-brass);
+}
+.topbar__back:hover { color: var(--c-terra); opacity: 1; }
+
+/* ═════════════════════════════════════════════════════════════════
+   HERO
+   ═════════════════════════════════════════════════════════════════ */
+.ses-hero {
+  padding: clamp(4rem, 12vh, 9rem) 1.5rem clamp(3rem, 8vh, 6rem);
+  text-align: center;
+}
+.ses-hero__inner {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.ses-hero__title {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2.2rem, 5.5vw, 4.25rem);
+  line-height: 1.12;
+  letter-spacing: -0.005em;
+  color: var(--c-charcoal);
+  margin: 1.5rem 0 2rem;
+}
+.ses-hero__sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.55;
+  color: var(--c-charcoal-soft);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   RECOGNITION (centered narrow column)
+   ═════════════════════════════════════════════════════════════════ */
+.ses-recognition {
+  padding: clamp(3rem, 8vh, 6rem) 1.5rem clamp(4rem, 10vh, 8rem);
+  background: var(--c-cream-2);
+  text-align: center;
+}
+.ses-recognition__inner {
+  max-width: var(--w-narrow);
+  margin: 0 auto;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   CONTAINER (what happens)
+   ═════════════════════════════════════════════════════════════════ */
+.ses-container {
+  padding: var(--m-xl) 1.5rem;
+}
+.ses-container__inner {
+  max-width: var(--w-narrow);
+  margin: 0 auto;
+}
+.ses-container__inner .h2 { margin-bottom: 2.5rem; }
+.ses-container__inner .prose p {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 1.8vw, 1.35rem);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   FOR WHOM (segments)
+   ═════════════════════════════════════════════════════════════════ */
+.ses-forwhom {
+  padding: var(--m-xl) 1.5rem;
+  background: var(--c-cream-2);
+}
+.ses-forwhom__inner {
+  max-width: var(--w-narrow);
+  margin: 0 auto;
+}
+.h2--space { margin-top: 4rem; }
+
+.ses-list {
+  margin: 0.5rem 0 1.5rem;
+}
+.ses-list li {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+  line-height: 1.55;
+  color: var(--c-charcoal);
+  padding: 0.85rem 0 0.85rem 1.5rem;
+  border-bottom: 1px solid rgba(43, 42, 40, 0.08);
+  position: relative;
+}
+.ses-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--c-brass);
+  font-weight: 300;
+}
+.ses-list li:last-child { border-bottom: none; }
+
+.ses-list--neg li { color: var(--c-charcoal-soft); }
+.ses-list--neg li::before { color: var(--c-charcoal-soft); }
+
+.ses-forwhom__close {
+  margin-top: 2.5rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--c-charcoal-soft);
+  text-align: center;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   INVESTMENT
+   ═════════════════════════════════════════════════════════════════ */
+.ses-investment {
+  padding: var(--m-xl) 1.5rem;
+  text-align: center;
+}
+.ses-investment__inner {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.ses-investment__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(43, 42, 40, 0.15);
+  border-bottom: 1px solid rgba(43, 42, 40, 0.15);
+}
+.ses-investment__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.ses-investment__label {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-brass);
+}
+.ses-investment__value {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.25;
+  color: var(--c-charcoal);
+}
+
+.ses-investment__note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--c-charcoal-soft);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+  .ses-investment__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 1rem;
+  }
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   APPLICATION FORM
+   ═════════════════════════════════════════════════════════════════ */
+.ses-apply {
+  padding: var(--m-xl) 1.5rem;
+  background: var(--c-charcoal);
+  color: var(--c-cream);
+  scroll-margin-top: 4rem;
+}
+.ses-apply__inner {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+.ses-apply .h2 { color: var(--c-cream); margin-bottom: 1.5rem; }
+.ses-apply .eyebrow { color: var(--c-brass); }
+
+.ses-apply__lede {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.6;
+  color: rgba(242, 234, 223, 0.85);
+  margin-bottom: 2.5rem;
+}
+
+.ses-form__row {
+  margin-bottom: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ses-form__label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-brass);
+}
+
+.ses-form input[type="text"],
+.ses-form input[type="email"],
+.ses-form select,
+.ses-form textarea {
+  width: 100%;
+  padding: 0.95rem 1.1rem;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--c-cream);
+  background: transparent;
+  border: 1px solid rgba(242, 234, 223, 0.3);
+  outline: none;
+  transition: border-color .3s ease;
+  border-radius: 0;
+}
+.ses-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.55;
+}
+.ses-form input:focus,
+.ses-form select:focus,
+.ses-form textarea:focus {
+  border-color: var(--c-cream);
+}
+.ses-form input::placeholder,
+.ses-form textarea::placeholder {
+  color: rgba(242, 234, 223, 0.4);
+  font-style: italic;
+}
+
+.ses-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%23A68A5B' stroke-width='1.5' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.1rem center;
+  background-size: 12px 8px;
+  padding-right: 2.75rem;
+}
+.ses-form select option { background: var(--c-charcoal); color: var(--c-cream); }
+
+.ses-form__submit {
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.ses-form__fineprint {
+  margin-top: 1.5rem;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: rgba(242, 234, 223, 0.55);
+  text-align: center;
+}
+
+.ses-apply .btn--primary {
+  background: var(--c-terra);
+  color: var(--c-cream);
+  border-color: var(--c-terra);
+}
+.ses-apply .btn--primary:hover {
+  background: var(--c-cream);
+  color: var(--c-charcoal);
+  border-color: var(--c-cream);
+}
+
+.ses-form__success {
+  padding: 2rem;
+  border: 1px solid rgba(242, 234, 223, 0.3);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--c-cream);
+  text-align: center;
+}
+
+/* ═════════════════════════════════════════════════════════════════
+   FAQ
+   ═════════════════════════════════════════════════════════════════ */
+.ses-faq {
+  padding: var(--m-xl) 1.5rem;
+}
+.ses-faq__inner {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.ses-faq__inner .h2 { margin-bottom: 2.5rem; }
+
+.ses-faq__items { margin-top: 1rem; }
+
+.ses-faq__item {
+  border-bottom: 1px solid rgba(43, 42, 40, 0.12);
+}
+.ses-faq__item summary {
+  padding: 1.5rem 2rem 1.5rem 0;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.9vw, 1.4rem);
+  line-height: 1.35;
+  color: var(--c-charcoal);
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  transition: color .3s ease;
+}
+.ses-faq__item summary::-webkit-details-marker { display: none; }
+.ses-faq__item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--c-brass);
+  transition: transform .3s ease;
+}
+.ses-faq__item[open] summary::after {
+  content: "−";
+  transform: translateY(-50%) rotate(0deg);
+}
+.ses-faq__item summary:hover { color: var(--c-terra); }
+
+.ses-faq__body {
+  padding: 0 2rem 2rem 0;
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--c-charcoal-soft);
+}
+.ses-faq__body p { margin-bottom: 1rem; }
+.ses-faq__body p:last-child { margin-bottom: 0; }
+
+/* ═════════════════════════════════════════════════════════════════
+   FINAL INVITATION
+   ═════════════════════════════════════════════════════════════════ */
+.ses-final {
+  padding: var(--m-xl) 1.5rem;
+  text-align: center;
+  background: var(--c-cream-2);
+}
+.ses-final__inner {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+.ses-final__text {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  line-height: 1.5;
+  color: var(--c-charcoal);
+  margin-bottom: 2.5rem;
+}
+.ses-final__cta {
+  margin: 0 auto;
+}
