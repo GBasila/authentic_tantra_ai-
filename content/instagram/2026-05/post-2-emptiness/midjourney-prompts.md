@@ -107,8 +107,16 @@ an unmade bed with crumpled cream linen sheets in soft morning light, single win
 
 **Текст потом ляжет:** в центре, в тёплом пятне света от свечи
 
+**Note:** Original prompt with «Bill Henson» reference was filtered by Midjourney (his name triggers content moderation). Replaced with cleaner version below.
+
 ```
-a single burning candle in a dim room, only the candle flame as the source of light, deep warm darkness surrounding, soft glow on a wooden table surface, intimate macro composition, single subject anchor, lots of negative space around the candle with deep charcoal warm shadows, slow living mood, A24 cinematography, shot on Mamiya 7 with Kodak Portra 400 film, Bill Henson photography influence, very deep warm shadows, warm cream highlights, single soft natural light source from the flame, no text, no logos, no symbols, no chakras, no mandalas --ar 1:1 --style raw --v 7
+intimate close-up photograph of a single beeswax candle burning on a dark wooden table, the flame as the only light source, soft amber glow on the wood surface, deep warm shadows surrounding, lots of negative space, slow living atmosphere, A24 cinematography, shot on Mamiya 7 medium format with Kodak Portra 400 film, Sarah Moon photography influence, warm cream and amber highlights, deep charcoal shadows, no text, no logos, no symbols --ar 1:1 --style raw --v 7
+```
+
+**Если эта версия не пошла — fallback простой:**
+
+```
+a single lit candle on a dark wooden table, soft warm flame light, deep dark surroundings, intimate close-up photograph, A24 cinematography, Kodak Portra 400 film, warm cream highlights, deep charcoal shadows, lots of negative space, no text, no logos --ar 1:1 --style raw --v 7
 ```
 
 ---
@@ -143,8 +151,22 @@ a still photograph divided in half by a vertical doorway frame in the exact cent
 
 **Текст потом ляжет:** в центре, в свете дверного проёма + brass линия снизу
 
+**Note (updated 2026-05-20):** Original longer version with «intimate threshold» / «sacred mood» / photographer name was rejected by Midjourney. Replaced with cleaner version.
+
 ```
-an open wooden doorway in a dim interior, warm golden light streaming through from another room beyond, deep charcoal shadows on the foreground walls, soft warm glow framing the doorway, intimate threshold composition, single subject anchor, lots of negative space in the central glow for text overlay, slow living sacred mood, A24 cinematography, shot on Mamiya 7 with Kodak Portra 400 film, Paul Schrader First Reformed restraint, Bill Henson twilight palette, warm cream and amber highlights in the doorway, deep charcoal shadows surrounding, single soft natural light source, no text, no logos, no symbols, no chakras, no mandalas --ar 1:1 --style raw --v 7
+photograph of an open wooden doorway in a dim interior, warm golden light streaming through from another room, deep charcoal shadows on the walls, soft warm glow framing the doorway, A24 cinematography, shot on Kodak Portra 400 film, warm cream and amber highlights, lots of negative space in the central glow, no text, no logos --ar 1:1 --style raw --v 7
+```
+
+**Если эта версия тоже не пошла — fallback простой:**
+
+```
+an open wooden doorway with warm golden light streaming through, dim interior, deep dark shadows, A24 cinematography, Kodak Portra 400 film, warm amber glow, lots of negative space, no text, no logos --ar 1:1 --style raw --v 7
+```
+
+**Если и проще не работает — альтернативный угол (фокус на свете):**
+
+```
+soft warm light spilling from an open doorway into a dim room at dusk, deep charcoal shadows on wooden walls, glowing amber backlight, slow living atmosphere, A24 cinematography, shot on Kodak Portra 400 film, warm cream and amber palette, lots of negative space in the center, no text, no logos --ar 1:1 --style raw --v 7
 ```
 
 ---
