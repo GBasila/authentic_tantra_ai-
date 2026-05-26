@@ -23,21 +23,45 @@
 
 <body class="page-sessiya">
 
-  <!-- Language switcher (global) -->
-  <nav class="lang-switch" aria-label="Language">
-    <a href="../../sessiya/" class="lang-switch__link" hreflang="ru">RU</a>
-    <span class="lang-switch__sep">·</span>
-    <span class="lang-switch__link is-active">EN</span>
-  </nav>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- TOP BAR · Global navigation -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
 
-  <!-- ═══════════════════════════════════════════════════════════════ -->
-  <!-- TOP BAR -->
-  <!-- ═══════════════════════════════════════════════════════════════ -->
-  <header class="topbar">
-    <a href="../" class="topbar__back" aria-label="Back to home">
-      <span aria-hidden="true">←</span>
-      <span>Authentic Tantra</span>
-    </a>
+      <button
+        class="topbar__toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        type="button"
+      >
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+      </button>
+
+      <a href="../" class="topbar__logo" aria-label="Authentic Tantra — home">
+        <span class="topbar__logo-text">Authentic&nbsp;Tantra</span>
+      </a>
+
+      <nav class="topbar__nav" id="primary-nav" aria-label="Primary">
+        <ul class="topbar__list">
+          <li><a href="../#put">my&nbsp;path</a></li>
+          <li><a href="../#praktika">living&nbsp;practice</a></li>
+          <li><a href="../sessiya/">1:1&nbsp;session</a></li>
+          <li><a href="../../krug/">circle</a></li>
+          <li><a href="../#dar">gift</a></li>
+        </ul>
+      </nav>
+
+      <nav class="topbar__lang" aria-label="Language">
+        <a href="../../sessiya/" class="lang-switch__link" hreflang="ru">RU</a>
+        <span class="lang-switch__sep">·</span>
+        <span class="lang-switch__link is-active">EN</span>
+      </nav>
+
+    </div>
   </header>
 
   <!-- ═══════════════════════════════════════════════════════════════ -->

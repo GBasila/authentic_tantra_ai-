@@ -654,53 +654,245 @@ a:hover { opacity: 0.65; }
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   LANGUAGE SWITCHER (global, fixed top right on all pages)
+   TOPBAR · Global navigation (replaces standalone lang-switch)
+   Desktop: thin fixed bar — logo · menu · lang
+   Mobile : hamburger left · logo center · lang right; menu opens
+            as full-screen charcoal overlay with Cormorant italic links
    ═════════════════════════════════════════════════════════════════ */
-.lang-switch {
+.topbar {
   position: fixed;
-  top: 1.25rem;
-  right: 1.25rem;
-  z-index: 50;
-  display: inline-flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  background: rgba(43, 42, 40, 0.28);
+  backdrop-filter: blur(12px) saturate(115%);
+  -webkit-backdrop-filter: blur(12px) saturate(115%);
+  border-bottom: 1px solid rgba(242, 234, 223, 0.06);
+  transition: background .35s ease, border-color .35s ease;
+}
+.topbar.is-scrolled {
+  background: rgba(43, 42, 40, 0.55);
+  border-bottom-color: rgba(242, 234, 223, 0.10);
+}
+.topbar__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.55rem 0.95rem;
+  gap: 1.5rem;
+}
+
+/* — brand logo — */
+.topbar__logo {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  color: rgba(242, 234, 223, 0.92);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .3s ease;
+}
+.topbar__logo:hover {
+  color: var(--c-cream);
+}
+
+/* — primary nav (desktop) — */
+.topbar__nav {
+  display: flex;
+  justify-content: center;
+}
+.topbar__list {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topbar__list a {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0;
   font-family: var(--sans);
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  background: rgba(43, 42, 40, 0.32);
-  backdrop-filter: blur(10px) saturate(110%);
-  -webkit-backdrop-filter: blur(10px) saturate(110%);
-  border: 1px solid rgba(242, 234, 223, 0.15);
-  border-radius: 999px;
-  color: rgba(242, 234, 223, 0.85);
-  transition: background .3s ease;
+  color: rgba(242, 234, 223, 0.62);
+  text-decoration: none;
+  transition: color .3s ease;
 }
+.topbar__list a:hover,
+.topbar__list a.is-active {
+  color: var(--c-cream);
+}
+.topbar__list a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  width: 0;
+  height: 1px;
+  background: var(--c-brass);
+  transform: translateX(-50%);
+  transition: width .35s ease;
+}
+.topbar__list a:hover::after,
+.topbar__list a.is-active::after {
+  width: 22px;
+}
+
+/* — language switcher (inside topbar) — */
+.topbar__lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(242, 234, 223, 0.85);
+}
+
+/* — hamburger toggle (hidden on desktop) — */
+.topbar__toggle {
+  display: none;
+  width: 32px;
+  height: 32px;
+  padding: 8px 6px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.topbar__toggle-bar {
+  display: block;
+  height: 1.4px;
+  width: 100%;
+  background: var(--c-cream);
+  transition: transform .35s ease, opacity .25s ease;
+  transform-origin: center;
+}
+
+/* ── Legacy lang-switch shim (preserves color tokens reused by inner spans) ── */
 .lang-switch__link {
   color: rgba(242, 234, 223, 0.55);
   transition: color .3s ease;
+  text-decoration: none;
 }
-.lang-switch__link:hover {
-  color: var(--c-cream);
-  opacity: 1;
-}
-.lang-switch__link.is-active {
-  color: var(--c-cream);
-}
-.lang-switch__sep {
-  color: rgba(242, 234, 223, 0.25);
-  font-size: 10px;
+.lang-switch__link:hover { color: var(--c-cream); }
+.lang-switch__link.is-active { color: var(--c-cream); }
+.lang-switch__sep { color: rgba(242, 234, 223, 0.25); font-size: 10px; }
+
+/* ── Mobile: hamburger + full-screen overlay ── */
+@media (max-width: 880px) {
+  .topbar__inner {
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    padding: 0.75rem 1.1rem;
+  }
+  .topbar__toggle { display: flex; }
+  .topbar__logo {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  /* hamburger → cross when open */
+  .topbar.is-menu-open .topbar__toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .topbar.is-menu-open .topbar__toggle-bar:nth-child(2) {
+    opacity: 0;
+  }
+  .topbar.is-menu-open .topbar__toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* nav becomes full-screen overlay */
+  .topbar__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 55;
+    background: var(--c-charcoal);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .topbar.is-menu-open .topbar__nav {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .topbar__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  .topbar__list a {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 5vw, 2.1rem);
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color: rgba(242, 234, 223, 0.85);
+    padding: 0.35rem 0;
+  }
+  .topbar__list a::after {
+    display: none;
+  }
+  .topbar__list a:hover,
+  .topbar__list a.is-active {
+    color: var(--c-cream);
+  }
 }
 
 @media (max-width: 480px) {
-  .lang-switch {
-    top: 0.85rem;
-    right: 0.85rem;
-    padding: 0.45rem 0.8rem;
-    font-size: 10px;
+  .topbar__inner {
+    padding: 0.65rem 0.85rem;
   }
+  .topbar__lang {
+    font-size: 10px;
+    gap: 0.4rem;
+  }
+}
+
+/* ── Push non-hero pages down so content doesn't hide under topbar ── */
+body.has-topbar-offset {
+  padding-top: 0; /* default: hero pages are full-bleed */
+}
+.page-sessiya,
+.page-krug {
+  padding-top: 56px;
+}
+@media (max-width: 880px) {
+  .page-sessiya,
+  .page-krug {
+    padding-top: 50px;
+  }
+}
+
+/* ── Smooth scroll for anchor jumps; account for topbar height ── */
+html { scroll-behavior: smooth; }
+.founder,
+.practice,
+.magnet {
+  scroll-margin-top: 80px;
 }
 
 /* ═════════════════════════════════════════════════════════════════

@@ -6,29 +6,7 @@
 
 .page-sessiya { background: var(--c-cream); }
 
-/* ─── Top bar ─── */
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding: 1.25rem 1.5rem;
-  background: rgba(242, 234, 223, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(43, 42, 40, 0.06);
-}
-.topbar__back {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--sans);
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--c-brass);
-}
-.topbar__back:hover { color: var(--c-terra); opacity: 1; }
+/* old .topbar / .topbar__back removed — replaced by global .topbar nav in styles.css */
 
 /* ═════════════════════════════════════════════════════════════════
    HERO

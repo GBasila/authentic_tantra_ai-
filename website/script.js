@@ -117,11 +117,77 @@
     });
   };
 
-  /* ─── 4. Init when DOM ready ────────────────────────────────*/
+  /* ─── 4. Topbar — hamburger + scroll state ───────────────────
+     - Toggles full-screen menu on mobile
+     - Adds .is-scrolled to topbar past 80px scroll (deeper background)
+     - Closes overlay on link click / Escape
+     - Sets aria-expanded for accessibility
+     - Highlights active page link based on current URL
+  */
+  const topbar = () => {
+    const bar = document.querySelector(".topbar");
+    if (!bar) return;
+
+    const toggle = bar.querySelector(".topbar__toggle");
+    const links  = bar.querySelectorAll(".topbar__list a");
+
+    const closeMenu = () => {
+      bar.classList.remove("is-menu-open");
+      if (toggle) {
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.setAttribute("aria-label", "Открыть меню");
+      }
+      document.body.style.overflow = "";
+    };
+
+    if (toggle) {
+      toggle.addEventListener("click", () => {
+        const willOpen = !bar.classList.contains("is-menu-open");
+        bar.classList.toggle("is-menu-open", willOpen);
+        toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+        toggle.setAttribute("aria-label", willOpen ? "Закрыть меню" : "Открыть меню");
+        document.body.style.overflow = willOpen ? "hidden" : "";
+      });
+    }
+
+    links.forEach((link) => link.addEventListener("click", closeMenu));
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && bar.classList.contains("is-menu-open")) {
+        closeMenu();
+      }
+    });
+
+    /* Scroll: solidify background past hero */
+    let lastScrolled = false;
+    window.addEventListener("scroll", () => {
+      const shouldSolid = window.scrollY > 80;
+      if (shouldSolid !== lastScrolled) {
+        lastScrolled = shouldSolid;
+        bar.classList.toggle("is-scrolled", shouldSolid);
+      }
+    }, { passive: true });
+
+    /* Active state: highlight links matching current pathname */
+    const path = window.location.pathname.replace(/\/$/, "") || "/";
+    links.forEach((link) => {
+      const href = link.getAttribute("href") || "";
+      // skip hash-only links (#put etc.) — they're sections of home
+      if (href.startsWith("#")) return;
+      // normalise: "sessiya/" vs "/sessiya/" vs "sessiya"
+      const targetPath = href.replace(/\/$/, "").replace(/^\.\//, "");
+      if (path.endsWith("/" + targetPath) || path === "/" + targetPath) {
+        link.classList.add("is-active");
+      }
+    });
+  };
+
+  /* ─── 5. Init when DOM ready ────────────────────────────────*/
   const init = () => {
     reveal();
     heroVideo();
     magnetForm();
+    topbar();
   };
 
   if (document.readyState === "loading") {

@@ -25,12 +25,46 @@
 
 <body>
 
-  <!-- Language switcher (global) -->
-  <nav class="lang-switch" aria-label="Language">
-    <span class="lang-switch__link is-active">RU</span>
-    <span class="lang-switch__sep">·</span>
-    <a href="en/" class="lang-switch__link" hreflang="en">EN</a>
-  </nav>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- TOP BAR · Global navigation -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+
+      <button
+        class="topbar__toggle"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        type="button"
+      >
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+      </button>
+
+      <a href="/" class="topbar__logo" aria-label="Аутентичная Тантра — на главную">
+        <span class="topbar__logo-text">Аутентичная&nbsp;Тантра</span>
+      </a>
+
+      <nav class="topbar__nav" id="primary-nav" aria-label="Главное меню">
+        <ul class="topbar__list">
+          <li><a href="#put" data-nav-anchor="put">мой&nbsp;путь</a></li>
+          <li><a href="#praktika" data-nav-anchor="praktika">живая&nbsp;практика</a></li>
+          <li><a href="sessiya/">сессия&nbsp;1:1</a></li>
+          <li><a href="krug/">круг&nbsp;возвращения</a></li>
+          <li><a href="#dar" data-nav-anchor="dar">дар</a></li>
+        </ul>
+      </nav>
+
+      <nav class="topbar__lang" aria-label="Language">
+        <span class="lang-switch__link is-active">RU</span>
+        <span class="lang-switch__sep">·</span>
+        <a href="en/" class="lang-switch__link" hreflang="en">EN</a>
+      </nav>
+
+    </div>
+  </header>
 
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- HERO -->
@@ -105,7 +139,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- О ВИКТОРИИ -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <section class="founder" data-reveal>
+  <section class="founder" id="put" data-reveal>
     <div class="founder__grid">
 
       <figure class="founder__image">
@@ -177,7 +211,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- ПРАКТИКА / СЛЕДЫ РАБОТЫ -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <section class="practice" data-reveal>
+  <section class="practice" id="praktika" data-reveal>
     <div class="practice__intro">
       <p class="eyebrow">Живая практика</p>
       <h2 class="h2">Здесь это происходит</h2>
@@ -329,7 +363,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- БЕСПЛАТНОЕ — LEAD MAGNET -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <section class="magnet" data-reveal>
+  <section class="magnet" id="dar" data-reveal>
     <figure class="magnet__bg" aria-hidden="true">
       <img
         src="assets/photos/retreat-space-candles.jpg"

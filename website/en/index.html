@@ -23,12 +23,46 @@
 
 <body>
 
-  <!-- Language switcher (global) -->
-  <nav class="lang-switch" aria-label="Language">
-    <a href="../" class="lang-switch__link" hreflang="ru">RU</a>
-    <span class="lang-switch__sep">·</span>
-    <span class="lang-switch__link is-active">EN</span>
-  </nav>
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <!-- TOP BAR · Global navigation -->
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <header class="topbar" role="banner">
+    <div class="topbar__inner">
+
+      <button
+        class="topbar__toggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        type="button"
+      >
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+        <span class="topbar__toggle-bar"></span>
+      </button>
+
+      <a href="./" class="topbar__logo" aria-label="Authentic Tantra — home">
+        <span class="topbar__logo-text">Authentic&nbsp;Tantra</span>
+      </a>
+
+      <nav class="topbar__nav" id="primary-nav" aria-label="Primary">
+        <ul class="topbar__list">
+          <li><a href="#put">my&nbsp;path</a></li>
+          <li><a href="#praktika">living&nbsp;practice</a></li>
+          <li><a href="sessiya/">1:1&nbsp;session</a></li>
+          <li><a href="../krug/">circle</a></li>
+          <li><a href="#dar">gift</a></li>
+        </ul>
+      </nav>
+
+      <nav class="topbar__lang" aria-label="Language">
+        <a href="../" class="lang-switch__link" hreflang="ru">RU</a>
+        <span class="lang-switch__sep">·</span>
+        <span class="lang-switch__link is-active">EN</span>
+      </nav>
+
+    </div>
+  </header>
 
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- HERO -->
@@ -104,7 +138,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- FOUNDER STORY -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <section class="founder" data-reveal>
+  <section class="founder" id="put" data-reveal>
     <div class="founder__grid">
 
       <figure class="founder__image">
@@ -176,7 +210,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- PRACTICE -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <section class="practice" data-reveal>
+  <section class="practice" id="praktika" data-reveal>
     <div class="practice__intro">
       <p class="eyebrow">Living practice</p>
       <h2 class="h2">Where this happens</h2>
@@ -289,7 +323,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- LEAD MAGNET -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <section class="magnet" data-reveal>
+  <section class="magnet" id="dar" data-reveal>
     <figure class="magnet__bg" aria-hidden="true">
       <img
         src="../assets/photos/retreat-space-candles.jpg"
