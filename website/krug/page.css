@@ -5,57 +5,19 @@
    ═════════════════════════════════════════════════════════════════ */
 
 .page-sessiya { background: var(--c-cream); }
-.page-krug    { background: var(--c-cream); }
-
-/* On krug we want the altar photo to bleed up under the floating topbar */
-body.page-krug { padding-top: 0; }
-@media (max-width: 880px) {
-  body.page-krug { padding-top: 0; }
-}
 
 /* old .topbar / .topbar__back removed — replaced by global .topbar nav in styles.css */
 
 /* ═════════════════════════════════════════════════════════════════
-   HERO — cinematic temple with altar photo backdrop
-   The reader lands inside the actual atmosphere of the krug:
-   warm wood, low amber light, a circle gathered around the altar.
-   Charcoal gradient keeps cream text legible without dulling
-   the photo's warmth.
+   HERO
    ═════════════════════════════════════════════════════════════════ */
 .ses-hero {
-  position: relative;
-  isolation: isolate;
-  min-height: clamp(560px, 88vh, 880px);
-  padding: clamp(7rem, 18vh, 11rem) 1.5rem clamp(5rem, 12vh, 8rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: clamp(4rem, 12vh, 9rem) 1.5rem clamp(3rem, 8vh, 6rem);
   text-align: center;
-  color: var(--c-cream);
-  background-color: #15110D;
-  background-image:
-    /* darker at top (nav contrast) + bottom (fade to next section);
-       lighter in the middle so the altar + circle stay luminous */
-    linear-gradient(
-      180deg,
-      rgba(15, 11, 8, 0.78) 0%,
-      rgba(15, 11, 8, 0.38) 22%,
-      rgba(15, 11, 8, 0.32) 55%,
-      rgba(15, 11, 8, 0.92) 100%
-    ),
-    url("../assets/photos/krug-altar-circle.jpg");
-  background-size: cover;
-  background-position: center 32%;
-  background-repeat: no-repeat;
 }
 .ses-hero__inner {
   max-width: 48rem;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-.ses-hero .eyebrow {
-  color: var(--c-brass);
 }
 .ses-hero__title {
   font-family: var(--serif);
@@ -63,9 +25,8 @@ body.page-krug { padding-top: 0; }
   font-size: clamp(2.2rem, 5.5vw, 4.25rem);
   line-height: 1.12;
   letter-spacing: -0.005em;
-  color: var(--c-cream);
+  color: var(--c-charcoal);
   margin: 1.5rem 0 2rem;
-  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
 }
 .ses-hero__sub {
   font-family: var(--serif);
@@ -73,33 +34,53 @@ body.page-krug { padding-top: 0; }
   font-weight: 300;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   line-height: 1.55;
-  color: rgba(242, 234, 223, 0.88);
+  color: var(--c-charcoal-soft);
   max-width: 32rem;
   margin: 0 auto;
-  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.4);
-}
-/* Soft transition into the next (cream) section — no hard edge */
-.ses-hero::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 90px;
-  background: linear-gradient(
-    180deg,
-    rgba(232, 224, 210, 0) 0%,
-    var(--c-cream-2) 100%
-  );
-  pointer-events: none;
-  z-index: 0;
 }
 
-@media (max-width: 720px) {
-  .ses-hero {
-    min-height: 78vh;
-    background-position: center 28%;
-    padding: clamp(6rem, 16vh, 9rem) 1.25rem clamp(4rem, 10vh, 6rem);
+/* ═════════════════════════════════════════════════════════════════
+   KRUG PHOTO — the actual circle
+   Wide cinematic photo of a real circle gathered around the altar.
+   Sits between Recognition and Container as a visual breath:
+   "this is what you're being invited into."
+   ═════════════════════════════════════════════════════════════════ */
+.krug-photo {
+  padding: clamp(3rem, 8vh, 6rem) 1.5rem clamp(3rem, 8vh, 6rem);
+  background: var(--c-cream);
+  text-align: center;
+}
+.krug-photo__figure {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+.krug-photo__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 35%;
+}
+.krug-photo__caption {
+  margin-top: 1.5rem;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.55;
+  color: var(--c-charcoal-soft);
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 560px) {
+  .krug-photo__figure { max-width: 26rem; }
+  .krug-photo__img {
+    aspect-ratio: 4 / 5;
+    object-position: center 32%;
   }
-  .ses-hero::after { height: 60px; }
 }
 
 /* ═════════════════════════════════════════════════════════════════
