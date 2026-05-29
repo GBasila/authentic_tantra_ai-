@@ -1,12 +1,12 @@
 ---
-title: Launch · Аутентичное Пробуждение · Поток 1
+title: Launch · Аутентичная Глубина · Поток 1
 status: source-of-truth
 owner: Sales Agent + Victoria
 launch_quarter: 2026-Q3
 last_reviewed: 2026-05-27
 ---
 
-# Launch · Аутентичное Пробуждение · Поток 1
+# Launch · Аутентичная Глубина · Поток 1
 
 Первый онлайн-поток флагманского курса (Tier 2 в Offer Ladder). Это не новый продукт — это реализация уже описанной стратегии в `/sales/offers.md`.
 
