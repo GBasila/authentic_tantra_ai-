@@ -1,19 +1,19 @@
-# Poster — V3 Photo Overlay · 4 Variants
+# Poster — V3 Photo Overlay · 2 Variants
 
-V3 (cinematic photo overlay) выбран как основной формат постера. Здесь 4 версии — комбинация языка и дня недели.
+V3 (cinematic photo overlay) — основной формат постера. Две языковые версии: EN и RU.
 
-**Все 4:** 1080×1350 px · фото на весь холст · cream текст на тёмной вуали · QR на `t.me/authentictantra` · handle `@AuthenticTantra`.
+**Обе:** 1080×1350 px · фото на весь холст · cream текст на тёмной вуали · QR на `t.me/authentictantra` · handle `@AuthenticTantra`.
+
+**Фото:** `victoria-portrait-sofa.jpg` (IMG_3550, тёплый утренний свет на белом диване).
 
 ---
 
 ## Файлы
 
-| Файл | Язык | День | Подзаголовок |
-|---|---|---|---|
-| `v3-en-monday.png` | EN | Понедельник | «Every Monday» + «18:30 · Details in Telegram» |
-| `v3-en-weekly.png` | EN | Без дня | «Weekly gathering» + «18:30 · Details in Telegram» |
-| `v3-ru-monday.png` | RU | Понедельник | «Каждый понедельник» + «18:30 · Подробности в Telegram» |
-| `v3-ru-weekly.png` | RU | Без дня | «Еженедельная встреча» + «18:30 · Подробности в Telegram» |
+| Файл | Язык | Подзаголовок |
+|---|---|---|
+| `v3-en-weekly.png` | EN | «Weekly gathering» + «18:30 · Details in Telegram» |
+| `v3-ru-weekly.png` | RU | «Еженедельная встреча» + «18:30 · Подробности в Telegram» |
 
 Title в EN: **Body. Breath. Heart.**
 Title в RU: **Тело. Дыхание. Сердце.**
@@ -22,10 +22,8 @@ Title в RU: **Тело. Дыхание. Сердце.**
 
 ## Когда какую версию использовать
 
-**EN-monday** — для **Instagram feed** на международную аудиторию + анонс конкретной недели
-**EN-weekly** — для **главной страницы канала / pinned post** — без привязки к дню
-**RU-monday** — для **Telegram канала** на русскоязычную аудиторию + конкретная неделя
-**RU-weekly** — для **долгоиграющего поста** в канале (pin, без устаревания)
+**EN-weekly** — для **Instagram feed** + **главной страницы канала** на международную аудиторию
+**RU-weekly** — для **Telegram канала** на русскоязычную аудиторию (pin, без привязки к дате)
 
 ---
 
