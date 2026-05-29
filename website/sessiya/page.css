@@ -119,6 +119,96 @@
 }
 
 /* ═════════════════════════════════════════════════════════════════
+   MENTORSHIP — long-form companion work
+   Two-tier card structure (3mo / 6mo) under a single section.
+   Reuses sub-eyebrows to break the content into rhythm.
+   ═════════════════════════════════════════════════════════════════ */
+.ses-mentorship {
+  padding: var(--m-xl) 1.5rem;
+  background: var(--c-cream);
+}
+.ses-mentorship__inner {
+  max-width: var(--w-narrow);
+  margin: 0 auto;
+}
+.ses-mentorship__inner .h2 { margin-bottom: 2rem; }
+.ses-mentorship__inner .prose p {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.ses-mentorship__inner .ses-list { margin-top: 0.5rem; }
+
+.ses-mentorship__sub {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-brass);
+  margin: 3rem 0 1rem;
+}
+
+.ses-mentorship__tiers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin: 1.5rem 0 1rem;
+  padding: 2.5rem 0;
+  border-top: 1px solid rgba(43, 42, 40, 0.15);
+  border-bottom: 1px solid rgba(43, 42, 40, 0.15);
+}
+.ses-mentorship__tier {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  text-align: center;
+}
+.ses-mentorship__tier-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-brass);
+}
+.ses-mentorship__tier-value {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.6vw, 1.85rem);
+  line-height: 1.15;
+  color: var(--c-charcoal);
+  margin: 0.25rem 0;
+}
+.ses-mentorship__tier-detail {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--c-charcoal-soft);
+}
+
+.ses-mentorship__note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--c-charcoal-soft);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 560px) {
+  .ses-mentorship__tiers {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* ═════════════════════════════════════════════════════════════════
    FOR WHOM (segments)
    ═════════════════════════════════════════════════════════════════ */
 .ses-forwhom {
