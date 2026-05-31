@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; overflow: hidden; }
+  body { background: #2B2A28; position: relative; }
+  .avatar { width: 1024px; height: 1024px; position: relative; overflow: hidden; }
+
+  /* Sofa photo, zoomed and centered so Victoria's face sits in
+     the middle of the inscribed circle. */
+  .avatar__photo {
+    position: absolute; inset: 0;
+    background-image: url("../../photos/victoria-portrait-sofa.jpg");
+    background-size: cover;
+    background-position: 50% 18%;
+    background-color: #2B2A28;
+    filter: contrast(1.02) saturate(1.0) brightness(0.94);
+  }
+
+  /* Veil — face stays light in upper-middle; darker top above wordmark,
+     darker bottom under title. */
+  .avatar__veil {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(180deg,
+        rgba(43,42,40,0.55) 0%,
+        rgba(43,42,40,0.10) 25%,
+        transparent 45%,
+        transparent 55%,
+        rgba(43,42,40,0.40) 75%,
+        rgba(43,42,40,0.88) 100%
+      );
+  }
+
+  /* Wordmark — top, well inside inscribed circle. */
+  .avatar__wordmark {
+    position: absolute;
+    top: 180px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: rgba(242, 234, 223, 0.95);
+    padding-left: 0.5em;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.7);
+  }
+
+  /* Title — bottom, shifted RIGHT toward circle edge.
+     At y~700-870 the inscribed-circle right edge is at x~930.
+     Right-aligned with 100px gap from right edge. */
+  .avatar__title {
+    position: absolute;
+    bottom: 175px;
+    right: 100px;
+    text-align: right;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1.05;
+    letter-spacing: -0.005em;
+    color: #F2EADF;
+    text-shadow: 0 3px 28px rgba(0,0,0,0.78), 0 0 14px rgba(0,0,0,0.45);
+  }
+</style>
+</head><body>
+  <div class="avatar">
+    <div class="avatar__photo"></div>
+    <div class="avatar__veil"></div>
+    <p class="avatar__wordmark">Authentic Tantra</p>
+    <h1 class="avatar__title">Body.<br/>Breath.<br/>Heart.</h1>
+  </div>
+</body></html>

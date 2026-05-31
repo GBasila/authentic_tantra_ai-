@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; }
+  body {
+    background: #2B2A28;
+    font-family: "Inter", sans-serif;
+    color: #F2EADF;
+    position: relative;
+  }
+  .cover { width: 1920px; height: 1080px; position: relative; }
+
+  /* Charcoal canvas — provides the "gray frame" on sides of the photo. */
+  .cover__bg-base {
+    position: absolute; inset: 0;
+    background: #2B2A28;
+  }
+
+  /* Photo: FULL portrait, fitted to height — 810×1080.
+     Positioned at 80% horizontal so left gray = 888px (room for text),
+     right gray ~210px (just a thin breath).
+     Mobile-safe zone (x=420..1500) shows: 468px text gray + 600px of photo. */
+  .cover__bg-photo {
+    position: absolute;
+    inset: 0;
+    background-image: url("../../photos/victoria-portrait-sofa.jpg");
+    background-size: auto 100%;
+    background-position: 80% center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    filter: contrast(1.0) saturate(1.0) brightness(0.96);
+  }
+
+  /* Very soft gradient at the seam where photo meets gray —
+     a tiny smudge so the join isn't hard-edged. */
+  .cover__bg-seam {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 840px;
+    width: 100px;
+    background: linear-gradient(90deg,
+      rgba(43,42,40,0.55) 0%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+
+  /* Brass architectural accent — thin vertical line in the LEFT empty gray field.
+     1px wide, ~640px tall, centered vertically, centered in the empty area
+     left of the text block. Soft 55% opacity so it barely whispers. */
+  .cover__brass-line {
+    position: absolute;
+    left: 230px;
+    top: 220px;
+    width: 1px;
+    height: 640px;
+    background: #A68A5B;
+    opacity: 0.55;
+    z-index: 2;
+  }
+
+  /* AUTHENTIC TANTRA — top center of MOBILE-SAFE zone (x=420..1500). */
+  .wordmark {
+    position: absolute;
+    top: 80px;
+    left: 420px; right: 420px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: rgba(242, 234, 223, 0.92);
+    padding-left: 0.5em;
+    z-index: 2;
+  }
+
+  /* Title + meta block — fully inside mobile-safe zone.
+     Block: x=460..860 (width 400px) — both edges within mobile crop (420..1500).
+     Mobile shows the ENTIRE text block + photo to its right. */
+  .cover__content {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 460px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+  }
+
+  .title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 108px;
+    line-height: 0.98;
+    letter-spacing: -0.005em;
+    color: #F2EADF;
+  }
+
+  .meta {
+    border-top: 1px solid rgba(242,234,223,0.42);
+    padding-top: 22px;
+    margin-top: 48px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .meta__day {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 36px;
+    color: #F2EADF;
+    line-height: 1.15;
+    display: block;
+  }
+  .meta__time {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(217, 201, 168, 0.98);
+    padding-left: 0.28em;
+    margin-top: 14px;
+    display: block;
+  }
+</style>
+</head><body>
+  <div class="cover">
+    <div class="cover__bg-base"></div>
+    <div class="cover__bg-photo"></div>
+    <div class="cover__bg-seam"></div>
+    <div class="cover__brass-line"></div>
+    <p class="wordmark">Authentic Tantra</p>
+    <div class="cover__content">
+      <h1 class="title">Body.<br/>Breath.<br/>Heart.</h1>
+      <div class="meta">
+        <span class="meta__day">Weekly gathering</span>
+        <span class="meta__time">18:30 · Details in Telegram</span>
+      </div>
+    </div>
+  </div>
+</body></html>
