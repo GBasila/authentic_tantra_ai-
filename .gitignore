@@ -30,3 +30,5 @@ node_modules/
 *.pem
 content/instagram/highlights/source-photos/
 content/instagram/highlights/source-photos/
+~$*.docx
+.DS_Store
