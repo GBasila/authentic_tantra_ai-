@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; }
+  body {
+    background: #2B2A28;
+    font-family: "Inter", sans-serif;
+    color: #F2EADF;
+    position: relative;
+  }
+  .cover { width: 1920px; height: 1080px; position: relative; }
+
+  /* Photo — Victoria centered, matching TG avatar composition */
+  .cover__photo {
+    position: absolute; inset: 0;
+    background-image: url("../../photos/victoria-portrait-sofa.jpg");
+    background-size: cover;
+    background-position: 50% 30%;
+    background-color: #2B2A28;
+    filter: contrast(1.02) saturate(1.0) brightness(0.94);
+  }
+
+  /* Veil — darker top (behind wordmark) and bottom (behind title/meta),
+     photo stays light in the middle where Victoria's face is. */
+  .cover__veil {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg,
+      rgba(43,42,40,0.65) 0%,
+      rgba(43,42,40,0.12) 22%,
+      transparent 42%,
+      transparent 58%,
+      rgba(43,42,40,0.55) 82%,
+      rgba(43,42,40,0.90) 100%
+    );
+  }
+
+  /* Enso mark — top right chop (matches poster convention). */
+  .enso-mark {
+    position: absolute;
+    top: 80px; right: 100px;
+    width: 200px; height: 200px;
+    background-image: url("../poster-drafts/enso-brass.png");
+    background-size: contain; background-repeat: no-repeat; background-position: center;
+    opacity: 0.88;
+    filter: brightness(1.08);
+    z-index: 3;
+  }
+
+  /* AUTHENTIC TANTRA — top center. */
+  .wordmark {
+    position: absolute;
+    top: 130px;
+    left: 0; right: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.55em;
+    text-transform: uppercase;
+    color: rgba(242, 234, 223, 0.95);
+    padding-left: 0.55em;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+    z-index: 2;
+  }
+
+  /* Body. Breath. Heart. — bottom, centered horizontally,
+     positioned inside mobile-safe zone (center 1080×608). */
+  .cover__content {
+    position: absolute;
+    bottom: 120px;
+    left: 0; right: 0;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 88px;
+    line-height: 1.0;
+    letter-spacing: -0.005em;
+    color: #F2EADF;
+    text-shadow: 0 3px 30px rgba(0,0,0,0.7), 0 0 16px rgba(0,0,0,0.4);
+    margin-bottom: 44px;
+  }
+
+  .meta {
+    display: inline-block;
+    border-top: 1px solid rgba(242,234,223,0.42);
+    padding-top: 20px;
+    max-width: 640px;
+  }
+  .meta__day {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 32px;
+    color: #F2EADF;
+    line-height: 1.15;
+    display: block;
+  }
+  .meta__time {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: rgba(217, 201, 168, 0.98);
+    padding-left: 0.32em;
+    margin-top: 12px;
+    display: block;
+  }
+</style>
+</head><body>
+  <div class="cover">
+    <div class="cover__photo"></div>
+    <div class="cover__veil"></div>
+    <div class="enso-mark"></div>
+    <p class="wordmark">Authentic Tantra</p>
+    <div class="cover__content">
+      <h1 class="title">Body. Breath. Heart.</h1>
+      <div class="meta">
+        <span class="meta__day">Weekly gathering</span>
+        <span class="meta__time">18:30 · Details in Telegram</span>
+      </div>
+    </div>
+  </div>
+</body></html>

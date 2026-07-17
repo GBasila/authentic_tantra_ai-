@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body { background: #2B2A28; font-family: "Inter", sans-serif; color: #F2EADF; position: relative; }
+  .poster { width: 1080px; height: 1350px; position: relative; }
+  .poster__bg {
+    position: absolute; inset: 0;
+    background-image: url("../../photos/victoria-portrait-sofa.jpg");
+    background-size: cover; background-position: center 30%;
+    background-color: #2B2A28;
+    filter: brightness(0.96) contrast(1.0) saturate(1.0);
+  }
+  .poster__veil {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(43,42,40,0.55) 0%, rgba(43,42,40,0.15) 22%, rgba(43,42,40,0.0) 55%, rgba(43,42,40,0.55) 100%);
+  }
+  .poster__content {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 88px 80px 80px; z-index: 2;
+  }
+  .top { text-align: center; }
+  .enso-mark {
+    position: absolute;
+    top: 30px; right: 210px;
+    width: 180px; height: 180px;
+    background-image: url("enso-brass.png");
+    background-size: contain; background-repeat: no-repeat; background-position: center;
+    opacity: 0.88;
+    filter: brightness(1.08);
+    z-index: 3;
+  }
+  /* Arcana logo — bottom right, larger */
+  .arcana-mark {
+    position: absolute;
+    right: 60px; bottom: 50px;
+    width: 340px; height: 110px;
+    background-image: url("arcana-logo.png");
+    background-size: contain; background-repeat: no-repeat; background-position: right center;
+    opacity: 0.85;
+    z-index: 4;
+  }
+  .eyebrow {
+    font-family: "Inter", sans-serif;
+    font-size: 22px; font-weight: 400;
+    letter-spacing: 0.5em; text-transform: uppercase;
+    color: #D9C9A8; padding-left: 0.5em;
+  }
+  .bottom { display: flex; flex-direction: column; gap: 36px; }
+  .title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic; font-weight: 300;
+    font-size: 120px; line-height: 0.98;
+    letter-spacing: -0.005em; color: #F2EADF;
+    text-align: left;
+    text-shadow: 0 2px 32px rgba(0,0,0,0.55), 0 0 16px rgba(0,0,0,0.35);
+  }
+  .meta { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+  .meta__when {
+    border-top: 1px solid rgba(242,234,223,0.3);
+    padding-top: 16px; flex: 1; max-width: 460px;
+  }
+  .meta__when .day {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic; font-size: 52px;
+    color: #F2EADF; display: block; line-height: 1.1;
+  }
+  .meta__when .time {
+    font-family: "Inter", sans-serif;
+    font-size: 18px; font-weight: 400;
+    letter-spacing: 0.26em; text-transform: uppercase;
+    color: #D9C9A8;
+    margin-top: 18px; display: block; padding-left: 0.26em;
+  }
+  /* QR block — LIFTED higher, absolute-positioned to sit above Arcana */
+  .meta__qr {
+    position: absolute;
+    right: 80px; bottom: 220px;
+    display: flex; flex-direction: column; align-items: end; gap: 8px;
+    z-index: 4;
+  }
+  .meta__qr .qr-wrap { background: #F2EADF; padding: 10px; }
+  .meta__qr img { display: block; width: 100px; height: 100px; }
+  .meta__qr .label {
+    font-family: "Inter", sans-serif;
+    font-size: 15px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: #D9C9A8;
+    padding-left: 0.18em;
+  }
+</style>
+</head><body>
+  <div class="poster">
+    <div class="poster__bg"></div>
+    <div class="poster__veil"></div>
+    <div class="poster__content">
+      <div class="enso-mark"></div>
+      <div class="arcana-mark"></div>
+      <div class="top">
+        <p class="eyebrow">Authentic Tantra</p>
+      </div>
+      <div class="bottom">
+        <h1 class="title">Body.<br/>Breath.<br/>Heart.</h1>
+        <div class="meta">
+          <div class="meta__when">
+            <span class="day">Weekly gathering</span>
+            <span class="time">18:30 · Details in Telegram</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="meta__qr">
+      <div class="qr-wrap"><img src="qr-telegram.png" alt="QR" /></div>
+      <span class="label">@AuthenticTantra</span>
+    </div>
+  </div>
+</body></html>
