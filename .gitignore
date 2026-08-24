@@ -8,6 +8,11 @@ Thumbs.db
 *.swp
 *.swo
 
+# Word/Excel temp files
+~$*.docx
+~$*.xlsx
+~$*
+
 # Private & sensitive
 **/participants.md
 **/participants_*.md
@@ -28,7 +33,10 @@ node_modules/
 # Keys
 *.key
 *.pem
+
+# Large source assets — kept locally only, never pushed to GitHub
 content/instagram/highlights/source-photos/
-content/instagram/highlights/source-photos/
-~$*.docx
-.DS_Store
+content/instagram/**/source-videos/
+content/meditations/_preview/
+**/*.HEIC
+**/*.heic
