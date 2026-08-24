@@ -14,6 +14,202 @@ usage: Каждый новый анонс строится по этой схе�
 
 ---
 
+## 🔴 CRITICAL UPDATE · 2026-07-29 · «Правило чистого текста»
+
+**Виктория утвердила новые правила форматирования. Они ЗАМЕНЯЮТ все правила, изложенные ниже в этом файле.** Старые эталоны Weaving Polarities и «Ткать полярности» оставлены для истории голоса, но их формат больше не используется.
+
+### Пять новых правил
+
+**1. Никаких тире (—) в основном тексте.** Проза строится только на точках и запятых. Если нужно противопоставление, использовать союз «а», «но», или отдельное предложение. Пример: ✗ «Оргазм — не точка. Это волна» → ✓ «Оргазм не точка, а волна».
+
+**2. Никаких переносов строк внутри абзаца.** Каждый абзац это единый поток текста от начала до финальной точки. Между разными абзацами одна пустая строка. Больше никаких коротких строк-фраз в столбик, никаких поэтических лесенок.
+
+**3. Декоративные знаки убираются везде, КРОМЕ фиксированного блока «Что вас ждёт?».** В основном теле анонса (заголовок, тема, «На этом воркшопе мы») нет ✨ в заголовке и нет других эмодзи. В блоке «Что вас ждёт?» сохраняется исходный шаблонный формат с 🫶 перед каждым пунктом, а после блока с 👉 перед ссылкой на регистрацию.
+
+**4. Блок «На этом воркшопе мы:» идёт одним прозаическим абзацем без буллетов**, где каждый элемент это отдельное предложение через точку. Блок «Что вас ждёт?» сохраняется в исходном шаблонном формате с восемью буллетами через 🫶, идущими плотно без пустых строк между ними.
+
+**6. Тон текста мягкий, тёплый, душевный.** Не лекторский, не декларативный. Читатель должен чувствовать тепло, любовь, доброту, узнавание. Слова: тихо, тепло, нежность, ждёт, помнит, родное, свой, дом. Виктория говорит из своего сердца тихо, рядом, как подруга, а не с кафедры.
+
+**7. Тема короткая и сразу понятная.** Максимум 6-7 абзацев в блоке темы. Первый абзац сразу называет суть, о чём речь. НЕ начинать с «Возможно, тебе это знакомо», «Наверное, ты знаешь» — это создаёт вакуум, читатель не понимает, о чём речь. Сразу называем: что нам мешает + что тантра говорит другое. Избегать абстрактных обобщений типа «Мир это место чудес» — оставлять только конкретное, тёплое, живое.
+
+**5. Один pull-out абзац в теме.** Короткая ключевая фраза (например «Экстаз не награда, а память») выделяется `**жирным**` и стоит отдельным абзацем в середине текста темы.
+
+**8. Английская pull-line под русским заголовком (опционально, для сильных анонсов).** Двуязычная подача — русский заголовок и одна короткая английская фраза курсивом сразу под ним. Пример: русский тайтл «Аутентичная Тантра: Чувственность как присутствие» + под ним `*Aliveness reads as sensuality. Presence is the ground.*`. Это работает как международная подпунктовая линия, добавляет глубины и цитируемости. Не в каждом анонсе — только когда есть сильная англоязычная фраза, работающая как самостоятельный эпиграф.
+
+**9. Приём «конкретный визуальный контраст».** В теме обязательно один живой пример, который сразу понятен без объяснения. Формула: «Один человек X. Другой человек Y. Разница только одна — Z». Пример из анонса «Чувственность как присутствие»: «Один может быть идеально ухоженным, безукоризненно одетым, натренированным — и оставаться пресным. Другой сидит на скамейке в старой майке — и излучает то, от чего невозможно оторвать глаз. Разница только одна: степень присутствия в собственном теле.» Такой контраст мгновенно закрепляет тезис — читатель узнаёт эти образы из жизни, и абстракция становится осязаемой.
+
+### Новый эталон · «Радость сердца, экстаз духа» (1 августа 2026, v2 · мягкая версия с восстановленным блоком «Что вас ждёт?»)
+
+**Русская версия:**
+
+**Аутентичная Тантра: Радость сердца, экстаз духа**
+
+**1 августа | 18:30 | Srithanu**
+
+Нас учили, что удовольствие короткое, локальное и заканчивается. Тантра тихо говорит: это только первый вдох.
+
+Оргазм не точка, а тёплая волна. Она начинается глубоко в теле и, если её не гасить, поднимается вверх. Через живот, к сердцу, до самой макушки.
+
+Когда эта волна доходит до сердца, приходит радость. Не событие, а состояние. Когда доходит до духа, приходит экстаз. Не как награда за старания, а как узнавание чего-то очень своего.
+
+**Экстаз не награда. Это память.**
+
+Это не техника, которую нужно осваивать. Это то, в чём мы родились. То, что тело хранит все эти годы, тихо ожидая, когда мы снова его услышим.
+
+Тантра приглашает вернуться. Медленно, без спешки. Через дыхание, через живое присутствие, через встречу с собой и с теми, кто рядом.
+
+**На этом воркшопе мы:**
+
+Тихо разомкнём напряжения, которые держат энергию только внизу тела. Научимся направлять живое тепло по тонким каналам вверх, к сердцу и к макушке. Почувствуем, как оргазм становится волной, заливающей не только тело, но и душу. Вспомним экстаз как своё родное состояние, то, в котором мы родились и куда всегда можно вернуться.
+
+**Что вас ждёт?**
+
+🫶 Экстатические танцы для освобождения тела и ума
+🫶 Практики раскрытия сердца для подлинной близости
+🫶 Ведомая практика поднятия энергии
+🫶 Исследование расширенных состояний сознания
+🫶 Тантрические ритуалы и медитации
+🫶 Мантры и сакральные звуки
+🫶 Блаженные моменты умиротворения и радости
+🫶 Значимые встречи с единомышленниками
+
+Условия участия по запросу. Регистрация обязательна для соблюдения гендерного баланса: 👉 https://t.me/Viktorynoxxx
+
+Подробнее здесь: https://www.facebook.com/share/191jE3FZCG/
+
+**English version:**
+
+**Authentic Tantra: Heart's Joy, Spirit's Ecstasy**
+
+**August 1 | 6:30 pm | Srithanu**
+
+We were taught that pleasure is brief, local, and ends. Tantra whispers something different: this is only the first breath.
+
+Orgasm is not a point but a warm wave. It begins deep in the body and, when not blocked, rises upward. Through the belly, to the heart, all the way to the crown.
+
+When this wave reaches the heart, joy arises. Not an event, but a state. When it reaches the spirit, ecstasy is born. Not as a reward for effort, but as the recognition of something deeply your own.
+
+**Ecstasy is not a reward. It is memory.**
+
+It is not a technique to master. It is the state we were born into. The one the body has quietly held all these years, waiting for us to listen again.
+
+Tantra invites you to return. Slowly, without hurry. Through breath, through living presence, through meeting yourself and those beside you.
+
+**At this workshop we will:**
+
+Gently release the tensions that keep energy locked in the lower body. Learn to guide living warmth along the subtle channels upward, to the heart and to the crown. Feel how orgasm becomes a wave that fills not only the body but the soul. Remember ecstasy as our own native state, the one we were born into and can always return to.
+
+**What Awaits You?**
+
+🫶 Ecstatic dances to free your body and mind
+🫶 Heart-opening practices for genuine connection
+🫶 Guided practice for energy elevation
+🫶 Exploration of expanded states of consciousness
+🫶 Tantric rituals and meditations
+🫶 Mantras and sacred sounds
+🫶 Blissful moments of serenity and joy
+🫶 Meaningful connections with a like-minded community
+
+Participation details available upon request. Registration is required for gender balance: 👉 https://t.me/Viktorynoxxx
+
+More details here: https://www.facebook.com/share/191jE3FZCG/
+
+---
+
+### Новый эталон · «Чувственность как присутствие» (август 2026, v3 · с англ. pull-line и визуальным контрастом)
+
+*Демонстрирует применение правил #8 (bilingual pull-line под заголовком) и #9 (конкретный визуальный контраст в теме). Работает для смешанной аудитории — цепляет и мужчин, и женщин.*
+
+**Русская версия:**
+
+**Аутентичная Тантра: Чувственность как присутствие**
+*Aliveness reads as sensuality. Presence is the ground.*
+
+**[дата] | 18:30 | Srithanu**
+
+Нас всё время учат, что чувственность это то, что можно натренировать. Правильно двигаться, правильно смотреть, правильно одеваться, правильно звучать. Курсы, техники, приёмы, приложения.
+
+Древняя тантра говорит другое.
+
+Настоящая чувственность не создаётся. Она не техника и не образ. Она рождается из присутствия. Из того, насколько ты сейчас в своём теле, в этом дыхании, в этом моменте.
+
+Присутствие это почва. Чувственность то, что вырастает из неё естественно. Без усилия. Без работы над образом.
+
+Именно поэтому один человек может быть идеально ухоженным, безукоризненно одетым, натренированным и оставаться пресным. А другой сидит на скамейке в старой майке и излучает то, от чего невозможно оторвать глаз. Разница только одна: степень присутствия в собственном теле.
+
+**Живое читается как чувственное. Всё остальное работа.**
+
+Мы разучились быть в теле. Мы научились быть удобными, впечатляющими, соответствующими, правильными. И потеряли ту тихую живую силу, которая появляется, когда ты просто здесь.
+
+Тантра это возвращение туда. Не через технику соблазнения. Не через практики «раскрытия». Через возвращение внимания в тело, где чувственность живёт как естественное следствие присутствия.
+
+**На этом воркшопе мы:**
+
+Тихо разомкнём напряжения, которые держат тело в постоянном производстве впечатления. Вернёмся к простому дыханию в живот и таз. Почувствуем разницу между «показывать себя» и «быть здесь». Вспомним чувственность как то, что было у нас всегда, но что появляется только тогда, когда мы возвращаемся в присутствие.
+
+**Что вас ждёт?**
+
+🫶 Экстатические танцы для освобождения тела и ума
+🫶 Практики раскрытия сердца для подлинной близости
+🫶 Ведомая практика поднятия энергии
+🫶 Исследование расширенных состояний сознания
+🫶 Тантрические ритуалы и медитации
+🫶 Мантры и сакральные звуки
+🫶 Блаженные моменты умиротворения и радости
+🫶 Значимые встречи с единомышленниками
+
+Условия участия по запросу. Регистрация обязательна для соблюдения гендерного баланса: 👉 https://t.me/Viktorynoxxx
+
+Подробнее здесь: https://www.facebook.com/share/191jE3FZCG/
+
+**English version:**
+
+**Authentic Tantra: Sensuality as Presence**
+*Aliveness reads as sensuality. Presence is the ground.*
+
+**[date] | 6:30 pm | Srithanu**
+
+We are constantly told that sensuality is something to be trained. Move the right way, look the right way, dress the right way, sound the right way. Courses, techniques, tricks, apps.
+
+Ancient tantra says otherwise.
+
+Real sensuality isn't created. It isn't a technique and it isn't an image. It is born from presence. From how much you are actually in your body, in this breath, in this moment.
+
+Presence is the ground. Sensuality is what grows from it naturally. Without effort. Without working on your image.
+
+That is why one person can be perfectly groomed, impeccably dressed, well-trained and remain flat. And another sits on a bench in an old T-shirt and radiates something you can't look away from. There is only one difference: how present they are in their own body.
+
+**Aliveness reads as sensuality. Everything else is work.**
+
+We forgot how to be in the body. We learned to be convenient, impressive, appropriate, correct. And we lost that quiet living force that appears when you are simply here.
+
+Tantra is a return to that. Not through seduction techniques. Not through practices of "opening." Through returning attention to the body, where sensuality lives as a natural consequence of presence.
+
+**At this workshop we will:**
+
+Gently release the tensions that hold the body in constant performance. Return to simple breathing into the belly and pelvis. Feel the difference between showing yourself and being here. Remember sensuality as something we've always had, but that only appears when we return to presence.
+
+**What Awaits You?**
+
+🫶 Ecstatic dances to free your body and mind
+🫶 Heart-opening practices for genuine connection
+🫶 Guided practice for energy elevation
+🫶 Exploration of expanded states of consciousness
+🫶 Tantric rituals and meditations
+🫶 Mantras and sacred sounds
+🫶 Blissful moments of serenity and joy
+🫶 Meaningful connections with a like-minded community
+
+Participation details available upon request. Registration is required for gender balance: 👉 https://t.me/Viktorynoxxx
+
+More details here: https://www.facebook.com/share/191jE3FZCG/
+
+---
+
+*Всё, что ниже в этом файле, это исторический эталон и старые правила. Формат заменён на новый, изложенный выше.*
+
+---
+
 ## Структура шаблона
 
 **Каждый анонс = 4 блока в строгом порядке:**
@@ -80,7 +276,7 @@ What Awaits You?
 
  Participation details available upon request.  Registration is required for gender balance: 👉 https://t.me/Viktorynoxxx
 
- More details here: https:// https://www.facebook.com/share/1H9TaZ9tMb/
+ More details here: https:// https://www.facebook.com/share/191jE3FZCG/
 
 ---
 
@@ -135,7 +331,7 @@ What Awaits You?
 
  Условия участия — по запросу. Регистрация обязательна для соблюдения гендерного баланса: 👉 https://t.me/Viktorynoxxx
 
- Подробнее здесь: https:// https://www.facebook.com/share/1H9TaZ9tMb/
+ Подробнее здесь: https:// https://www.facebook.com/share/191jE3FZCG/
 
 ---
 

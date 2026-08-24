@@ -5,13 +5,15 @@
 
 ---
 
-## 0 · TL;DR — Read These Three Files First
+## 0 · TL;DR — Read These Five Files First
 
 If you only have 5 minutes:
 
-1. **`/brand/brand_identity.md`** — what this brand is, archetype, USP, transformation promise
-2. **`/brand/tone_of_voice.md`** — how the brand speaks (forbidden words, signature phrases)
-3. **`/strategy/90_day_plan.md`** — what we are doing this quarter
+1. **`/brand/name_decision.md`** — 🌟 NEW 2026-07-26. Brand is now **Shunqu · Authentic Tantra Practices**. Read this FIRST to understand the current name state and migration plan.
+2. **`/brand/brand_identity.md`** — what this brand is, archetype, USP, transformation promise
+3. **`/brand/tone_of_voice.md`** — how the brand speaks (forbidden words, signature phrases)
+4. **`/brand/lineage_chavin.md`** — the two mythic anchors of the brand: Kaula (living) + Chavín (ancestral). Read this to understand what the brand is *rooted in*, not just what it says.
+5. **`/strategy/90_day_plan.md`** — what we are doing this quarter
 
 Then read this file (CLAUDE.md) for current state and open threads.
 
@@ -19,7 +21,9 @@ Then read this file (CLAUDE.md) for current state and open threads.
 
 ## 1 · What This Project Is
 
-**Аутентичная Тантра** (Authentic Tantra) — a premium transformational brand led by **Виктория (Victoria)**, a devoted practitioner of the **Kaula tantric tradition**.
+**Shunqu · Authentic Tantra Practices** *(renamed 2026-07-26 from «Аутентичная Тантра / Authentic Tantra»)*
+
+A premium transformational brand led by **Виктория (Victoria)**, a devoted practitioner of the **Kaula tantric tradition**. The new brand mark **SHUNQU** (Шу́нку, «сердце» on Ancash Quechua — the living language of the Chavín-de-Huántar valley in Peru) roots the brand in an older lineage: the mother-culture of Andean spirituality, where female priestesses held the highest sacred office 3000 years ago. Full context: `/brand/name_decision.md` + `/brand/lineage_chavin.md`.
 
 **Category we are creating:** "Conscious Embodiment for Accomplished Souls" — not neo-tantra, not esoteric mysticism, not generic wellness. A grounded, traditional path for accomplished people who already have outer success and now seek inner depth.
 
@@ -95,20 +99,79 @@ authentic_tantra_ai/
 
 ---
 
-## 4 · The Six AI Agents
+## 4 · AI Team · Phase 1 (5 Skills · updated 2026-07-30)
 
-All agent specifications live in `/agents/`. Every agent loads `/agents/_shared_context.md` at session start. Read them when you take on a specific role:
+All Skill specifications live in `/agents/`. Every Skill loads `/agents/_shared_context.md` at session start.
 
-| Agent | Folder | When to be this |
-|---|---|---|
-| **Brand Guardian** | `/brand/` | Voice audit on any customer-facing copy |
-| **Content Agent** | `/content/` | Drafting IG, email, YouTube, Telegram content |
-| **Sales Agent** | `/sales/` | Launch copy, DM responses, sales pages |
-| **Retreat Agent** | `/retreats/` | Retreat brochures, journey design, onboarding |
-| **Audience Agent** | `/audience/` | Listening — surfacing patterns from raw signals |
-| **CEO Strategic Agent** | `/strategy/` | Monthly synthesis memos, quarterly planning |
+**Активная команда (Phase 1 · 5 Skills):**
 
-**Universal rule:** AI never publishes autonomously. Every customer-facing output requires human approval. AI never responds to grief/trauma/crisis — escalate to human within 15 min.
+| # | Skill | Файл | Роль |
+|---|---|---|---|
+| 1 | 🎯 **AI Executive Director** | `ai_executive_director.md` | Оркестрация всей AI-команды, стратегия, финальная синтезация |
+| 2 | 🕊 **Knowledge Core & Practice Curator** | `knowledge_core_practice_curator.md` | Интеллектуальная память бренда: практики, принципы, источники, образовательная карта |
+| 3 | 🧠 **Audience Psychology Researcher** | `audience_psychology_researcher.md` | Глубокое понимание аудитории через 5 карт (Pain, Desire, Fear, Identity, Transformation) |
+| 4 | ✍️ **Content & Conversion Architect** | `content_conversion_architect.md` | Создание всего контента (Reels, посты, лендинги, email, реклама) + продающий копирайт |
+| 5 | 🛡 **Brand Guardian** | `brand_guardian.md` | Финальный аудит голоса, языка, визуала, философии перед публикацией |
+
+**Иерархия:**
+```
+Victoria (Founder · Final Authority)
+    ↓
+🎯 AI Executive Director
+    ↓
+├── 🧠 Audience Researcher    (что сказать)
+├── ✍️ Content Architect       (как сказать)
+├── 🕊 Knowledge Core           (что мы знаем)
+└── 🛡 Brand Guardian            (финальный gate)
+```
+
+**Стандартный workflow для контента:**
+```
+Victoria → Executive Director → Audience Researcher (insight)
+    → Content Architect (create) → Brand Guardian (audit)
+    → Victoria (approve) → publish
+```
+
+**Стандартный workflow для практики:**
+```
+Victoria → Executive Director → Knowledge Core (получение или соавторство)
+    → Content Architect (упаковка) → Brand Guardian (аудит)
+    → Victoria (approve)
+```
+
+### 🗄 Архивные агенты (НЕ активировать)
+
+Устарели 2026-07-30 и заменены новыми Skills. Файлы в `/agents/` теперь stub'ы, полные версии в `/agents/_archive/`:
+
+| Архивный агент | Заменён |
+|---|---|
+| `audience_agent.md` | → Audience Psychology Researcher |
+| `content_agent.md` | → Content & Conversion Architect |
+| `sales_agent.md` | → Content & Conversion Architect (+ будущий Launch Orchestrator) |
+| `ceo_agent.md` | → AI Executive Director |
+| `retreat_agent.md` | → будущий Product Architect (Phase 2) |
+
+**Правило:** любой из архивных файлов при активации должен перенаправить к своему заменителю.
+
+### 📚 Стратегические документы AI-команды
+
+- `/agents/ai_team_architecture_v1.md` — полный стратегический blueprint AI-команды (5 фаз развития, 15 будущих Skills, workflow-паттерны)
+- `/agents/ai_team_audit_v1.md` — независимый аудит от 2026-07-30 с честной критикой, приоритетами и следующими шагами
+- `/knowledge_core/README.md` — навигация по базе знаний бренда
+
+### Универсальные правила AI-команды
+
+**Никогда:**
+- AI не публикует автономно — каждый customer-facing output требует одобрения Виктории
+- AI не отвечает на grief/trauma/crisis — эскалация к Виктории в течение 15 минут
+- AI не активирует файлы из `/agents/_archive/`
+- Content Architect не публикует без прохода через Brand Guardian
+- Knowledge Core не выдумывает практики (только соавторство с Викторией или систематизация traditional)
+
+**Всегда:**
+- Каждый Skill читает `/agents/_shared_context.md` при активации
+- Перед сложной задачей — активация Executive Director для оркестрации
+- Простые задачи имеют fast-path (не через всю цепочку)
 
 ---
 
@@ -142,9 +205,24 @@ All agent specifications live in `/agents/`. Every agent loads `/agents/_shared_
 
 ## 6 · What Is In Flight — Open Threads
 
-### 🟡 IMMEDIATE — Pending user action
-- **Vercel deployment of /website/** — user is registering on Vercel as of 2026-05-13. Once she has an account → import the repo → set Root Directory to `website` → deploy. See `/website/DEPLOY.md` for the full guide. Alternative if Vercel is hard: **Cloudflare Pages** or **Netlify** are equally viable.
-- **Formspree form ID** — lead magnet form in `index.html` has placeholder `REPLACE_WITH_YOUR_FORM_ID` in the action attribute. Until replaced, form falls back to `mailto:hello@authentictantra.com` via `script.js` (this is intentional, working fallback).
+### 🔴 IMMEDIATE — Brand Rename in Progress (started 2026-07-26)
+
+Bran is transitioning from **Authentic Tantra** → **Shunqu · Authentic Tantra Practices**.
+Full plan in `/brand/name_decision.md`. Six phases:
+
+**Phase 1 · Domain acquisition (this week)**
+- [ ] Buy **shunqu.co** on Porkbun (~€25/yr) — primary domain
+- [ ] Buy **shunqu.io** (~€40/yr) — tech/premium reserve
+- [ ] Buy **shunqu.love** (~€10/yr) — for lead magnets and landings
+
+**Phase 2 · Visual identity (weeks 2–3)** — wordmark SHUNQU, updated Visual Bible, social avatars
+**Phase 3 · Legal (weeks 3–4)** — USPTO trademark filing in class 41 + 44, EUIPO consideration
+**Phase 4 · Site migration (weeks 4–6)** — connect shunqu.co to Vercel, transition banner, 301 redirects
+**Phase 5 · Audience comms (weeks 4–8)** — email announcement, Reel with the story, updated bios everywhere
+**Phase 6 · Ethical contribution (ongoing)** — 1% of gross revenue to Andean + Kaula-lineage stewardship funds
+
+### 🟡 IMMEDIATE — Pending user action (pre-rename)
+- **Formspree form ID** — lead magnet form in `index.html` has placeholder `REPLACE_WITH_YOUR_FORM_ID` in the action attribute. Until replaced, form falls back to `mailto:hello@authentictantra.com` via `script.js` (this is intentional, working fallback). **Note:** during migration this email will become `hello@shunqu.co`.
 
 ### 🟡 NEXT MILESTONES (per current 90-day plan)
 **Month 1 (current):**
@@ -318,9 +396,10 @@ Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
 The hierarchy of authority is:
 1. `/brand/brand_identity.md` — what the brand is
 2. `/brand/tone_of_voice.md` — how it speaks
-3. `/brand/visual_direction.md` — how it looks
-4. `/brand/founder_story.md` — what it draws from
-5. `/brand/mission_values.md` — why it exists
+3. `/brand/lineage_chavin.md` — what the brand is rooted in (mythic anchors: Kaula + Chavín)
+4. `/brand/visual_direction.md` — how it looks
+5. `/brand/founder_story.md` — what it draws from
+6. `/brand/mission_values.md` — why it exists
 
 If anything contradicts these — **the brand wins**. Even Victoria's preferences in the moment.
 
