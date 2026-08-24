@@ -23,10 +23,18 @@ no one is living in. The question: *what is the richness I actually seek?*
 **Turning line:** «Материальное богатство не заполняет внутренний голод.»
 
 ## Act 3 — The Search (Поиск)
-Retreats across continents. Dark retreats. Plant-medicine diets of strength in Peru.
+Retreats across continents. Dark retreats. Plant-medicine diets of strength in Peru —
+in the lineage that reaches back to Chavín-de-Huántar, the mother-culture of the Andes,
+where women held the highest priestly seat three thousand years ago.
 Pilgrimages to places of power. Each layer: stripped. Each shedding: a homecoming.
 
 **Turning line:** «Каждый этап снимал слой старых представлений.»
+
+**Note for retelling:** Chavín is named here not as academic reference, but as an acknowledgement
+that the plant-medicine path Victoria walked in Peru is not a modern wellness experiment —
+it is a living continuation of one of the oldest, most rigorously held sacred medicine
+traditions on the American continent. She stepped into an ancestral river.
+See `/brand/lineage_chavin.md`.
 
 ## Act 4 — The Finding (Обретение)
 Encounter with the Kaula tantric lineage. Not a set of techniques —

@@ -7,8 +7,25 @@ last_reviewed: 2026-04-23
 
 # Brand Identity
 
-## Name
-**Аутентичная Тантра** (Authentic Tantra)
+## Name — decided 2026-07-26
+
+# **Shunqu · Authentic Tantra Practices**
+
+**Основа (word mark):** **SHUNQU** (Шу́нку · SHOON-koo)
+**Дескриптор:** Authentic Tantra Practices (Аутентичные тантрические практики)
+
+**«Shunqu»** — слово из **Ancash Quechua**, живого языка долины Чавин-де-Уантар (Перу).
+Означает **«сердце»** — одновременно физический орган, духовный центр личности и
+средоточие мудрости. В кечуа-философии *shunqu-yuq* = «имеющая сердце», т. е.
+живой, проснувшийся человек.
+
+Полное обоснование выбора и план миграции: **`/brand/name_decision.md`**.
+Мифическая линия, из которой пришло имя: **`/brand/lineage_chavin.md`**.
+
+### Legacy note
+До 26 июля 2026 г. бренд работал под именем **Аутентичная Тантра / Authentic Tantra**.
+Оно сохраняется как дескриптор («Authentic Tantra Practices») в переходный период
+и как SEO-мост для существующей аудитории, пока миграция на shunqu.co не завершена.
 
 ## Category
 **Conscious Embodiment for Accomplished Souls** — a new category.
@@ -26,6 +43,22 @@ and now seek inner depth.
 12 years in executive business leadership. Daily practice from 5am.
 Retreats in Peru, dark retreats, plant-medicine paths, pilgrimage.
 Not a guru. A fellow traveler with depth and lineage.
+
+## Mythic Lineage — the two anchors
+
+The brand stands on two lineages: one living, one ancestral.
+
+### 1. Kaula (living) · Индия
+Direct transmission through Victoria's practice and teachers (Pema Gitama and others).
+Kaula is the practical, daily, embodied line — the way she trained, the way she breathes now, the way she guides.
+
+### 2. Chavín (ancestral memory) · Перу · 1500–200 BCE
+Mother-culture of the Andes. Female-led priesthood. First documented psychedelic-medicine tradition of the Americas (huachuma). Underground initiation galleries at Chavín de Huántar.
+We do not claim descent from Chavín. **We bow to her** — as the ancient sister of the work we do.
+
+Both lineages say the same thing: **truth does not come from outside. It is already inside. Practice creates the conditions for the body to remember.**
+
+Full deep-dive: `/brand/lineage_chavin.md`.
 
 ## Unique Selling Proposition
 Traditional Kaula tantra, translated into a grounded daily practice

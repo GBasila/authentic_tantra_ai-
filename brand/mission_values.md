@@ -55,3 +55,26 @@ Ancient wisdom meets modern holistic practice — physical, emotional, spiritual
 - We do not run ads in the first six months of any new offer's life. Organic trust first.
 - We do not teach beyond what the founder has lived.
 - We do not grow the team faster than we can hold each person's coherence with the voice.
+
+---
+
+# Lineage Commitments (added 2026-07-26)
+
+We stand in two lineages: **Kaula** (living, our direct line) and **Chavín** (ancestral memory,
+mother-culture of Andean plant-medicine). See `/brand/lineage_chavin.md`.
+
+Because we draw from source traditions, we owe them concrete respect — not decoration:
+
+- **1% of gross revenue** annually contributed to organizations serving descendants of the
+  traditions we honor. Distribution: Andean Alliance for Sustainable Development, Q'ero
+  Foundation, Nierika A.C. (huachuma preservation), and — as the brand touches Kaula —
+  a Kaula-lineage stewardship fund chosen by Victoria's teachers.
+- **Attribution always.** When we use Andean concepts (munay, sonqo, kausay, sami, ajayu),
+  or Kaula terms, we cite source and tradition. No stripping of context.
+- **No teaching of plant-medicine work** without direct lineage authorization from
+  maestros/maestras. Plant medicine is honored in speech, held in silence in offer.
+- **Pilgrimage over tourism.** When Victoria visits Chavín-de-Huántar, Peru sacred sites,
+  or Kaula sacred places — it is practice, not content. What we share afterward is what
+  remains after integration, never during.
+- **No aesthetic extraction.** We do not use Chavín iconography (jaguar/serpent/caiman)
+  or Huichol/Wixárika visual motifs as brand decoration. Memory, not costume.
