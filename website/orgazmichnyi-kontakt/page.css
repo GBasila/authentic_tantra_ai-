@@ -67,6 +67,14 @@
   color: var(--c-brass);
   vertical-align: middle;
 }
+.ok-hero__format {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(242,234,223,0.75);
+  margin: 0 0 1.5rem;
+}
 .ok-hero__sub {
   font-family: var(--serif);
   font-style: italic;
@@ -186,6 +194,11 @@
   line-height: 1.6;
   color: var(--c-charcoal-soft, #5C5850);
   margin: 0;
+}
+.ok-frame__text strong {
+  font-weight: 500;
+  font-style: normal;
+  color: var(--c-charcoal);
 }
 
 /* ═════════════════════════════════════════════════════════════════
@@ -374,14 +387,14 @@
   text-align: center;
 }
 .ok-circle__figure {
-  max-width: 38rem;
+  max-width: 56rem;
   margin: 0 auto;
 }
 .ok-circle__img {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   border-radius: 4px;
   filter: saturate(0.96);
