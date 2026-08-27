@@ -24,31 +24,32 @@
     .ok-circle--women .ok-circle__figure { max-width: 34rem; }
     .ok-circle--women .ok-circle__img { aspect-ratio: 4 / 3; }
 
-    /* Final CTA meta — quiet, brand-voice: small sans caps, wide-spaced */
+    /* Final CTA meta — sans caps title, serif italic rows */
     body.page-ok .ok-final__title {
       font-family: var(--sans);
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.32em;
+      font-size: clamp(15px, 1.7vw, 17px);
+      font-weight: 500;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
       color: var(--c-brass);
-      opacity: 0.9;
-      margin: 0 0 1.1rem;
+      opacity: 1;
+      line-height: 1.4;
+      margin: 0 0 1.35rem;
     }
     body.page-ok .ok-final__row {
       font-family: var(--serif);
       font-style: italic;
-      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      font-size: clamp(1.2rem, 2vw, 1.4rem);
       font-weight: 400;
       letter-spacing: 0.01em;
-      color: var(--c-charcoal-soft, #5C5850);
-      margin: 0.4rem 0;
+      color: var(--c-charcoal);
+      margin: 0.5rem 0;
     }
     body.page-ok .ok-final__price {
       font-family: var(--serif);
       font-style: normal;
-      font-weight: 500;
-      font-size: 1.1em;
+      font-weight: 600;
+      font-size: 1.15em;
       color: var(--c-brass);
     }
 
