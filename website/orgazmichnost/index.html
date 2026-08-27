@@ -19,6 +19,11 @@
 
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="../orgazmichnyi-kontakt/page.css" />
+  <style>
+    /* Page-specific overrides — women's landing */
+    .ok-circle--women .ok-circle__figure { max-width: 34rem; }
+    .ok-circle--women .ok-circle__img { aspect-ratio: 4 / 3; }
+  </style>
 </head>
 
 <body class="page-ok">
@@ -132,7 +137,7 @@
       <figure class="ok-photo-pair__figure">
         <img
           src="assets/portrait.jpg"
-          alt="Женщина в тёплом закатном свете, рука у ключицы"
+          alt="Женская фигура на камне у воды, движение и ткань"
           class="ok-photo-pair__img"
           loading="lazy"
         />
@@ -210,7 +215,7 @@
   <!-- ═══════════════════════════════════════════════════════════════ -->
   <!-- WOMEN'S CIRCLE PHOTO -->
   <!-- ═══════════════════════════════════════════════════════════════ -->
-  <section class="ok-circle" data-reveal>
+  <section class="ok-circle ok-circle--women" data-reveal>
     <figure class="ok-circle__figure">
       <img
         src="assets/krug.jpg"
