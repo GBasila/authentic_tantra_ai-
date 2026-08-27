@@ -126,7 +126,7 @@
    OPENING — desired image
    ═════════════════════════════════════════════════════════════════ */
 .ok-opening {
-  padding: clamp(4rem, 10vh, 8rem) 1.5rem clamp(2rem, 5vh, 4rem);
+  padding: clamp(3.6rem, 9vh, 7.2rem) 1.5rem clamp(1.8rem, 4.5vh, 3.6rem);
   background: var(--c-cream);
   text-align: center;
 }
@@ -153,18 +153,23 @@
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   PHOTO — hands (breathing visual)
+   PAIRED PHOTOS — hands + couple side by side
    ═════════════════════════════════════════════════════════════════ */
-.ok-photo {
-  padding: clamp(2rem, 5vh, 4rem) 1.5rem clamp(2rem, 5vh, 4rem);
+.ok-photo-pair {
+  padding: clamp(1.8rem, 4.5vh, 3.6rem) 1.5rem;
   background: var(--c-cream);
-  text-align: center;
 }
-.ok-photo__figure {
-  max-width: 34rem;
+.ok-photo-pair__inner {
+  max-width: 44rem;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
-.ok-photo__img {
+.ok-photo-pair__figure {
+  margin: 0;
+}
+.ok-photo-pair__img {
   display: block;
   width: 100%;
   height: auto;
@@ -173,12 +178,19 @@
   border-radius: 4px;
   filter: saturate(0.96) contrast(1.02);
 }
+@media (max-width: 560px) {
+  .ok-photo-pair__inner {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    max-width: 22rem;
+  }
+}
 
 /* ═════════════════════════════════════════════════════════════════
    TANTRA FRAME — quiet philosophical anchor
    ═════════════════════════════════════════════════════════════════ */
 .ok-frame {
-  padding: clamp(3rem, 8vh, 6rem) 1.5rem;
+  padding: clamp(2.7rem, 7.2vh, 5.4rem) 1.5rem;
   background: var(--c-cream-2);
   text-align: center;
 }
@@ -205,7 +217,7 @@
    RECOGNITION — "Для двоих, если вы"
    ═════════════════════════════════════════════════════════════════ */
 .ok-recognition {
-  padding: clamp(4rem, 9vh, 7rem) 1.5rem;
+  padding: clamp(3.6rem, 8.1vh, 6.3rem) 1.5rem;
   background: var(--c-cream);
 }
 .ok-recognition__inner {
@@ -251,7 +263,7 @@
    DAYS
    ═════════════════════════════════════════════════════════════════ */
 .ok-days {
-  padding: clamp(4rem, 9vh, 7rem) 1.5rem;
+  padding: clamp(3.6rem, 8.1vh, 6.3rem) 1.5rem;
   background: var(--c-cream-2);
 }
 .ok-days__inner {
@@ -301,7 +313,7 @@
    OUTCOMES
    ═════════════════════════════════════════════════════════════════ */
 .ok-outcomes {
-  padding: clamp(4rem, 9vh, 7rem) 1.5rem;
+  padding: clamp(3.6rem, 8.1vh, 6.3rem) 1.5rem;
   background: var(--c-cream);
 }
 .ok-outcomes__inner {
@@ -335,20 +347,20 @@
 .ok-outcomes__consequence {
   font-family: var(--serif);
   font-style: italic;
-  font-weight: 400;
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.1vw, 1.35rem);
   line-height: 1.5;
-  color: var(--c-brass);
+  color: var(--c-charcoal);
   margin: 1.5rem 0 0;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(166,138,91,0.3);
+  border-top: 1px solid rgba(43,42,40,0.15);
 }
 
 /* ═════════════════════════════════════════════════════════════════
    FORMAT
    ═════════════════════════════════════════════════════════════════ */
 .ok-format {
-  padding: clamp(4rem, 9vh, 7rem) 1.5rem;
+  padding: clamp(3.6rem, 8.1vh, 6.3rem) 1.5rem;
   background: var(--c-cream-2);
   text-align: center;
 }
@@ -377,12 +389,20 @@
   font-style: italic;
   margin: 1rem 0 0;
 }
+.ok-format__note--strong {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: var(--c-brass);
+  letter-spacing: 0;
+  margin-top: 0.65rem;
+}
 
 /* ═════════════════════════════════════════════════════════════════
    CIRCLE PHOTO
    ═════════════════════════════════════════════════════════════════ */
 .ok-circle {
-  padding: clamp(3rem, 8vh, 6rem) 1.5rem clamp(2rem, 4vh, 3rem);
+  padding: clamp(2.7rem, 7.2vh, 5.4rem) 1.5rem clamp(1.8rem, 3.6vh, 2.7rem);
   background: var(--c-cream);
   text-align: center;
 }
@@ -412,13 +432,26 @@
    ABOUT ME
    ═════════════════════════════════════════════════════════════════ */
 .ok-about {
-  padding: clamp(3rem, 7vh, 5rem) 1.5rem clamp(5rem, 10vh, 7rem);
+  padding: clamp(2.7rem, 6.3vh, 4.5rem) 1.5rem clamp(4.5rem, 9vh, 6.3rem);
   background: var(--c-cream);
 }
 .ok-about__inner {
   max-width: 40rem;
   margin: 0 auto;
   text-align: center;
+}
+.ok-about__figure {
+  max-width: 20rem;
+  margin: 0 auto 2rem;
+}
+.ok-about__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: saturate(0.96) contrast(1.02);
 }
 .ok-about__lede {
   font-family: var(--serif);
@@ -458,7 +491,7 @@
    FINAL CTA
    ═════════════════════════════════════════════════════════════════ */
 .ok-final {
-  padding: clamp(4rem, 10vh, 7rem) 1.5rem clamp(4rem, 10vh, 7rem);
+  padding: clamp(3.6rem, 9vh, 6.3rem) 1.5rem clamp(3.6rem, 9vh, 6.3rem);
   background: var(--c-cream-2);
   text-align: center;
 }
@@ -483,21 +516,22 @@
 }
 .ok-final__title {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--c-brass);
+  color: var(--c-charcoal);
+  font-weight: 500;
   margin: 0 0 0.75rem;
 }
 .ok-final__row {
   font-family: var(--serif);
-  font-weight: 300;
-  font-size: clamp(1.1rem, 1.9vw, 1.25rem);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.95vw, 1.3rem);
   color: var(--c-charcoal);
   margin: 0.4rem 0;
 }
 .ok-final__price {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--c-charcoal);
 }
 .ok-final__tiny {
@@ -506,6 +540,27 @@
   font-size: 11px;
   color: var(--c-charcoal-soft, #5C5850);
   font-style: italic;
+}
+
+/* Support link under final CTA */
+.ok-support {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-brass);
+  text-decoration: none;
+  padding: 0.55rem 1.25rem;
+  border: 1px solid rgba(166,138,91,0.4);
+  border-radius: 999px;
+  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+.ok-support:hover {
+  color: var(--c-cream);
+  background: var(--c-brass);
+  border-color: var(--c-brass);
 }
 
 /* ═════════════════════════════════════════════════════════════════
