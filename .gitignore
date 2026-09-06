@@ -40,3 +40,6 @@ content/instagram/**/source-videos/
 content/meditations/_preview/
 **/*.HEIC
 **/*.heic
+
+# Claude session scratch (duplicates of committed files)
+Claude outputs/
