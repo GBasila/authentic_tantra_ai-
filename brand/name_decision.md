@@ -1,13 +1,27 @@
 ---
 title: Brand Name Decision Record
-status: source-of-truth
+status: superseded
 owner: Brand Guardian Agent
 decision_date: 2026-07-26
 decision_maker: Victoria (Founder)
 sacred: true
 ---
 
-# Официальное решение по имени бренда
+> ## ⛔️ РЕШЕНИЕ ОТМЕНЕНО · 2026-09-05
+>
+> **Бренд остаётся «Authentic Tantra / Аутентичная Тантра».**
+> Виктория отменила переход на «Shunqu · Authentic Tantra Practices».
+>
+> Документ ниже сохранён как запись о рассмотренном варианте — не как руководство
+> к действию. Ничего из него не исполняется: домены shunqu.* не покупаются,
+> вордмарки не используются, миграция сайта не проводится.
+>
+> Актуальное имя и правила его употребления: `/brand/brand_identity.md`
+> и Brand & Launch Context v1.2.
+
+---
+
+# Официальное решение по имени бренда *(отменено — см. блок выше)*
 
 ## Окончательный выбор
 

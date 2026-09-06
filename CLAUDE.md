@@ -9,9 +9,9 @@
 
 If you only have 5 minutes:
 
-1. **`/brand/name_decision.md`** — 🌟 NEW 2026-07-26. Brand is now **Shunqu · Authentic Tantra Practices**. Read this FIRST to understand the current name state and migration plan.
-2. **`/brand/brand_identity.md`** — what this brand is, archetype, USP, transformation promise
-3. **`/brand/tone_of_voice.md`** — how the brand speaks (forbidden words, signature phrases)
+1. **`/brand/brand_identity.md`** — what this brand is, archetype, USP, transformation promise. Имя бренда — **Authentic Tantra / Аутентичная Тантра**. Переименование в Shunqu рассматривалось в июле 2026 и **отменено 2026-09-05** (см. `/brand/name_decision.md`).
+2. **`/brand/tone_of_voice.md`** — how the brand speaks (forbidden words, signature phrases)
+3. **`/brand/founder_voice/voice_profile_v2.md`** — голос Виктории по её реальной речи; главнее любых теорий о голосе
 4. **`/brand/lineage_chavin.md`** — the two mythic anchors of the brand: Kaula (living) + Chavín (ancestral). Read this to understand what the brand is *rooted in*, not just what it says.
 5. **`/strategy/90_day_plan.md`** — what we are doing this quarter
 
@@ -21,9 +21,11 @@ Then read this file (CLAUDE.md) for current state and open threads.
 
 ## 1 · What This Project Is
 
-**Shunqu · Authentic Tantra Practices** *(renamed 2026-07-26 from «Аутентичная Тантра / Authentic Tantra»)*
+**Authentic Tantra · Аутентичная Тантра**
 
-A premium transformational brand led by **Виктория (Victoria)**, a devoted practitioner of the **Kaula tantric tradition**. The new brand mark **SHUNQU** (Шу́нку, «сердце» on Ancash Quechua — the living language of the Chavín-de-Huántar valley in Peru) roots the brand in an older lineage: the mother-culture of Andean spirituality, where female priestesses held the highest sacred office 3000 years ago. Full context: `/brand/name_decision.md` + `/brand/lineage_chavin.md`.
+A premium transformational brand led by **Виктория (Victoria)**, a devoted practitioner of the **Kaula tantric tradition**. The brand also draws on an Andean anchor — Chavín de Huántar in Peru, where female priestesses held sacred office 3000 years ago; that lineage material lives in `/brand/lineage_chavin.md` and stays valid as *content*, separately from naming.
+
+**Имя закрыто 2026-09-05:** бренд остаётся **Authentic Tantra**. Варианты Shunqu и Kuyari отклонены. Никакие новые материалы не используют эти имена.
 
 **Category we are creating:** "Conscious Embodiment for Accomplished Souls" — not neo-tantra, not esoteric mysticism, not generic wellness. A grounded, traditional path for accomplished people who already have outer success and now seek inner depth.
 
@@ -205,24 +207,16 @@ Victoria → Executive Director → Knowledge Core (получение или с
 
 ## 6 · What Is In Flight — Open Threads
 
-### 🔴 IMMEDIATE — Brand Rename in Progress (started 2026-07-26)
+### ✅ CLOSED — Brand naming (решено 2026-09-05)
 
-Bran is transitioning from **Authentic Tantra** → **Shunqu · Authentic Tantra Practices**.
-Full plan in `/brand/name_decision.md`. Six phases:
+Бренд остаётся **Authentic Tantra / Аутентичная Тантра**. Переименование в «Shunqu · Authentic Tantra Practices», начатое 2026-07-26, отменено решением Виктории.
 
-**Phase 1 · Domain acquisition (this week)**
-- [ ] Buy **shunqu.co** on Porkbun (~€25/yr) — primary domain
-- [ ] Buy **shunqu.io** (~€40/yr) — tech/premium reserve
-- [ ] Buy **shunqu.love** (~€10/yr) — for lead magnets and landings
+Практические следствия: домены shunqu.* не покупаются, вордмарки в `/brand/wordmarks/` и CapCut-кит на SHUNQU не используются, миграция сайта не нужна. Почта остаётся на `authentictantra.com`.
 
-**Phase 2 · Visual identity (weeks 2–3)** — wordmark SHUNQU, updated Visual Bible, social avatars
-**Phase 3 · Legal (weeks 3–4)** — USPTO trademark filing in class 41 + 44, EUIPO consideration
-**Phase 4 · Site migration (weeks 4–6)** — connect shunqu.co to Vercel, transition banner, 301 redirects
-**Phase 5 · Audience comms (weeks 4–8)** — email announcement, Reel with the story, updated bios everywhere
-**Phase 6 · Ethical contribution (ongoing)** — 1% of gross revenue to Andean + Kaula-lineage stewardship funds
+Остаточные упоминания Shunqu/Kuyari по репозиторию вычищаются постепенно — см. запись за 2026-09-05 в разделе 15.
 
-### 🟡 IMMEDIATE — Pending user action (pre-rename)
-- **Formspree form ID** — lead magnet form in `index.html` has placeholder `REPLACE_WITH_YOUR_FORM_ID` in the action attribute. Until replaced, form falls back to `mailto:hello@authentictantra.com` via `script.js` (this is intentional, working fallback). **Note:** during migration this email will become `hello@shunqu.co`.
+### 🟡 IMMEDIATE — Pending user action
+- **Formspree form ID** — lead magnet form in `index.html` has placeholder `REPLACE_WITH_YOUR_FORM_ID` in the action attribute. Until replaced, form falls back to `mailto:hello@authentictantra.com` via `script.js` (this is intentional, working fallback).
 
 ### 🟡 NEXT MILESTONES (per current 90-day plan)
 **Month 1 (current):**
@@ -542,10 +536,13 @@ claude
   описывать учителей каула-линии по минимуму).
 - Готова ли Виктория назвать Марго Ананд вслух в видео.
 - Живой пример для блока «устала работать над собой».
-- **Конфликт нейминга:** этот файл говорит «Shunqu · Authentic Tantra Practices»,
-  а Brand & Launch Context v1.2 от 21.08.2026 предписывает использовать только
-  «Authentic Tantra» и держит вопрос зонтичного имени открытым. Требует решения
-  Виктории — какой документ главнее.
+- ~~Конфликт нейминга Shunqu / Authentic Tantra.~~ **Закрыт 2026-09-05:**
+  Виктория решила оставить **Authentic Tantra**. Разделы 0, 1 и 6 этого файла
+  и `/brand/name_decision.md` обновлены. Остаточные упоминания Shunqu/Kuyari
+  остаются в 22 файлах и вычищаются отдельным проходом — приоритет:
+  `/agents/*` (влияет на поведение AI-команды) → `/brand/brand_identity.md`
+  и `/brand/capcut_kit/README.md` → `/knowledge_core/*` → черновики в `/strategy/`.
+  Файлы `/brand/wordmarks/*.png` и CapCut-кит на SHUNQU больше не используются.
 
 ### 2026-05-16 (later) — Founder Story v1.2 (meaning pass)
 
