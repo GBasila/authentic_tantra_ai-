@@ -357,6 +357,26 @@ When user says "set up X" — first check this table for status, then guide acco
 - `reflect:` — retrospective / learning captured
 - `release:` — version milestone
 
+### ⚠️ Multi-session protocol (Victoria works from several chats)
+
+Виктория ведёт этот репозиторий из нескольких сессий Claude одновременно. Ремоут может уйти вперёд на десятки коммитов, пока ты работаешь. Локальная копия по умолчанию считается устаревшей.
+
+**Начало любой сессии — ДО первого изменения файлов:**
+```bash
+git fetch origin && git status -sb
+git pull --rebase origin main
+```
+
+**Конец каждого блока работы:** коммить мелко и пушить сразу. Накопленная за часы локальная работа — это и есть причина расхождений. 2026-09-05 так образовался разрыв в 57 коммитов.
+
+**Если push отклонён (`fetch first`):**
+1. `git fetch origin`
+2. Проверить, не переписана ли история: `git merge-base --is-ancestor <старая база> origin/main`
+3. Если переписана — сделать ветку-бэкап, затем `git checkout -B main origin/main` и `git cherry-pick` только свои коммиты
+4. Force-push запрещён. При крайней необходимости — только `--force-with-lease` и только с прямого подтверждения Виктории
+
+**Перед переносом локального коммита на новую вершину** проверить, не появилось ли его содержимое на ремоуте под другим хешем. 2026-09-05 локальный `a87af06` (launch kit) оказался устаревшей копией папки, которую на ремоуте развили на +966 строк — слепой rebase откатил бы новую работу.
+
 ### Author for commits
 Use:
 ```
@@ -365,7 +385,7 @@ git -c user.name="Victoria" -c user.email="victoria@authentictantra.local" commi
 
 Always Co-Author Claude:
 ```
-Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 ```
 
 ### Branch strategy
@@ -422,7 +442,7 @@ If Victoria asks for something off-brand: **name the tension kindly, offer alter
 
 ### Working in this repo
 ```bash
-cd /Users/vicky/alignment-app/authentic_tantra_ai
+cd /Users/vicky/authentic_tantra_ai-
 git status
 git pull origin main
 ```
@@ -440,7 +460,7 @@ git add <files>
 git -c user.name="Victoria" -c user.email="victoria@authentictantra.local" \
     commit -m "<prefix>: <message>
 
-Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 git push origin main
 ```
 
@@ -481,6 +501,51 @@ claude
 
 > *Update this section when ending a significant work session.*
 > *Format: date · what was done · what is in flight · what to do next.*
+
+### 2026-09-05 — Founder voice, tantra scripts, practice library
+
+**Done:**
+- ✅ `brand/founder_voice/` — три новых файла source-of-truth уровня:
+  `personal_identity_map.md` (модель личного контекста из HERMES, девять систем,
+  с разделением SOURCE / PATTERN / HYPOTHESIS), `voice_profile_v2.md` (профиль
+  голоса по реальной речи — главнее карты при письме от её имени),
+  `audio_transcript_life_story.md` (расшифровка 12-минутного аудио).
+- ✅ `content/scripts/tantra/` — четыре версии сценария «Что такое тантра».
+  v3 — финальная, построена на источниках: концепция ближайшего врага у Уоллиса,
+  Near Enemy #3 и #15, Марго Ананд и её High Sex, слова Пемы про коридоры вокруг
+  центра. Плюс `reel_60sec.md` и `chto_takoe_tantra_full.md` (основной текст,
+  из него растут лендинг и длинные видео).
+- ✅ `library/practices/` — `breathwork.md` (~40 практик из 5 источников,
+  сгруппированы по линии, с пометкой публикуемости и противопоказаниями),
+  `pair_questions.md` (вопросы для парной работы по пяти столпам),
+  `rewiring_reaction.md` (перепрошивка реакции на стресс, механизм через
+  четырёхфазный цикл Райха).
+
+**Новые правила голоса (добавить в tone_of_voice.md при следующей правке):**
+- Предложения не начинаются с отрицания. «Не улучшение» → «Расчистка вместо улучшения».
+- Регистр: бренд-обучение и тексты про тантру — на «вы», лайфстайл — на «ты».
+
+**Находки:**
+- Отказ от чакр и кундалини как первичной рамки идёт от самой линии: у Гитамы
+  вместо них три центра и «Наблюдатель». Это точная передача традиции, а не
+  маркетинговое решение — можно говорить вслух.
+- «Тантра — это способ дышать с жизнью в одном ритме» — сквозная формулировка
+  Гитамы, в touchstone-фразах стоит без атрибуции.
+- Конфликт в библиотеке: Марсиниак «Приносящие рассвет» построена на манифестации
+  и «ты создаёшь свою реальность». Уоллис разбирает это как Near Enemy #10.
+  Пересекает три красные линии. Пометить как «читается критически».
+- Уоллис Near Enemy #13 разбирает энергетическое исцеление с позиции
+  доказательности — недоиспользованный материал под аватар А3.
+
+**Открытые вопросы:**
+- Можно ли называть Пему публично в контенте (в библиотеке правило —
+  описывать учителей каула-линии по минимуму).
+- Готова ли Виктория назвать Марго Ананд вслух в видео.
+- Живой пример для блока «устала работать над собой».
+- **Конфликт нейминга:** этот файл говорит «Shunqu · Authentic Tantra Practices»,
+  а Brand & Launch Context v1.2 от 21.08.2026 предписывает использовать только
+  «Authentic Tantra» и держит вопрос зонтичного имени открытым. Требует решения
+  Виктории — какой документ главнее.
 
 ### 2026-05-16 (later) — Founder Story v1.2 (meaning pass)
 
